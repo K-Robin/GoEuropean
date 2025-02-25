@@ -1,14 +1,15 @@
 {
   "shared": {
-    "amazon.com": {
-      "Netherlands": "bol.com",
-      "Germany": "otto.de"
-    },
+    "chatgpt.com": "chat.mistral.ai",
     "google.com": "ecosia.org",
     "ebay.com": {
       "Netherlands": "marktplaats.nl",
       "Germany": "kleinanzeigen.ebay.de"
     }
+  },
+  "amazon.com": {
+    "Netherlands": "bol.com",
+    "Germany": "otto.de"
   },
   "Netherlands": {
     "amazon.nl": "bol.com"

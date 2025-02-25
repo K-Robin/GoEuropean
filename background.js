@@ -16,6 +16,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const userCountry = getUserCountry();
         let alternative = null;
 
+        // Check shared mappings
         const sharedMappings = countryMappings.shared;
         for (const [nonEuSite, alternatives] of Object.entries(sharedMappings)) {
             if (request.url.includes(nonEuSite)) {
@@ -24,12 +25,15 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             }
         }
 
+        // Check country-specific mappings if no alternative found in shared
         if (!alternative) {
             const countrySpecificMappings = countryMappings[userCountry];
-            for (const [nonEuSite, euAlternative] of Object.entries(countrySpecificMappings)) {
-                if (request.url.includes(nonEuSite)) {
-                    alternative = euAlternative;
-                    break;
+            if (countrySpecificMappings) {
+                for (const [nonEuSite, euAlternative] of Object.entries(countrySpecificMappings)) {
+                    if (request.url.includes(nonEuSite)) {
+                        alternative = euAlternative;
+                        break;
+                    }
                 }
             }
         }
