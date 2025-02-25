@@ -26,26 +26,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
             let alternative = null;
 
-            // Check shared mappings first
-            const sharedMappings = countryMappings.shared || {};
-            for (const [nonEuSite, alternatives] of Object.entries(sharedMappings)) {
+            const sharedMappings = countryMappings["alternative"] || {};
+            for (const [nonEuSite, euAlternative] of Object.entries(sharedMappings)) {
                 if (request.url.includes(nonEuSite)) {
-                    alternative = typeof alternatives === 'object' ? alternatives[userCountry] : alternatives;
-                    if (alternative) break;
-                }
-            }
-
-            // Check country-specific mappings if no alternative found
-            if (!alternative && userCountry) {
-                const countrySpecificMappings = countryMappings[userCountry] || {};
-                for (const [nonEuSite, euAlternative] of Object.entries(countrySpecificMappings)) {
-                    if (request.url.includes(nonEuSite)) {
+                    if (typeof euAlternative === "string") {
                         alternative = euAlternative;
-                        break;
+                    } else if (userCountry && euAlternative[userCountry]) {
+                        alternative = euAlternative[userCountry];
                     }
+                    break;
                 }
             }
-
             sendResponse({ alternative });
         });
 

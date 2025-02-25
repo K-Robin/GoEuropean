@@ -1,5 +1,5 @@
 {
-  "shared": {
+  "alternatives": {
     "chatgpt.com": "chat.mistral.ai",
     "google.com": "ecosia.org",
     "ebay.com": {
@@ -11,11 +11,5 @@
     "reddit.com": "join-lemmy.org",
     "github.com": "codeberg.org",
     "google.com/maps": "wego.here.com"
-  },
-  "Netherlands": {
-    "amazon.nl": "bol.com"
-  },
-  "Germany": {
-    "amazon.de": "otto.de"
   }
 }
