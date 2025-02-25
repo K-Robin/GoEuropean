@@ -1,0 +1,19 @@
+{
+  "shared": {
+    "amazon.com": {
+      "Netherlands": "bol.com",
+      "Germany": "otto.de"
+    },
+    "google.com": "ecosia.org",
+    "ebay.com": {
+      "Netherlands": "marktplaats.nl",
+      "Germany": "kleinanzeigen.ebay.de"
+    }
+  },
+  "Netherlands": {
+    "amazon.nl": "bol.com"
+  },
+  "Germany": {
+    "amazon.de": "otto.de"
+  }
+}

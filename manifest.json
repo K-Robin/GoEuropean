@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Go European",
+  "version": "1.0",
+  "description": "Suggests European website alternatives to non-European websites.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
