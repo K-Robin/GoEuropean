@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+<h1>European Alternatives</h1>
+<div class="country-selector">
+    <h3>Fill in your country here for country specific suggestions!
+        If you're country is not on the list, there are no specific suggestions
+        for that country</h3>
+    <div style="display: flex; align-items: center; width: 100%;">
+        <input id="country-input" placeholder="Fill in your country here">
+        <span id="remove-btn" style="display: none;">X</span>
+    </div>
+    <div id="autocomplete-list" class="autocomplete-items"></div>
+</div>
+<p id="message">Visit a website to see suggestions!</p>
+<script src="../js/popup.js"></script>
+</body>
+</html>

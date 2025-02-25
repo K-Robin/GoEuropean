@@ -5,11 +5,12 @@
     "ebay.com": {
       "Netherlands": "marktplaats.nl",
       "Germany": "kleinanzeigen.ebay.de"
-    }
-  },
-  "amazon.com": {
-    "Netherlands": "bol.com",
-    "Germany": "otto.de"
+    },
+    "gmail.com": "mail.proton.me",
+    "translate.google.com": "deepl.com",
+    "reddit.com": "join-lemmy.org",
+    "github.com": "codeberg.org",
+    "google.com/maps": "wego.here.com"
   },
   "Netherlands": {
     "amazon.nl": "bol.com"

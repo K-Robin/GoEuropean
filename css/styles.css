@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 300px;
+    background-color: lightskyblue;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.country-selector {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#country-input {
+    width: 100%;
+}
+
+#remove-btn {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.autocomplete-items {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    border-top: none;
+    z-index: 99;
+    position: absolute;
+    background-color: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    top: 100%; /* Position the autocomplete list below the input field */
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e0e0e0;
+}
