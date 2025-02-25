@@ -1,6 +1,6 @@
 let countryMappings = {};
 
-fetch(browser.runtime.getURL('countryMappings.json'))
+fetch(chrome.runtime.getURL('countryMappings.json'))
     .then(response => response.json())
     .then(data => {
         countryMappings = data;
@@ -11,7 +11,7 @@ function getUserCountry() {
     return "Netherlands"; // Example
 }
 
-browser.runtime.onMessage.addEventListener((request, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "checkAlternative") {
         const userCountry = getUserCountry();
         let alternative = null;
