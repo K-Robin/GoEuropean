@@ -7,7 +7,14 @@ fetch(chrome.runtime.getURL('countryMappings.json'))
     .then(response => response.json())
     .then(data => {
         countryMappings = data;
-        availableCountries = Object.keys(countryMappings).filter(country => country !== 'shared');
+        availableCountries = Object.keys(data).reduce((countries, site) => {
+            const alternatives = data[site];
+            if (typeof alternatives === 'object') {
+                countries.push(...Object.keys(alternatives));
+            }
+            return countries;
+        }, []);
+        availableCountries = [...new Set(availableCountries)];
     });
 
 // Function to update the UI for the selected country

@@ -1,15 +1,13 @@
 {
-  "alternatives": {
-    "chatgpt.com": "chat.mistral.ai",
-    "google.com": "ecosia.org",
-    "ebay.com": {
-      "Netherlands": "marktplaats.nl",
-      "Germany": "kleinanzeigen.ebay.de"
-    },
-    "gmail.com": "mail.proton.me",
-    "translate.google.com": "deepl.com",
-    "reddit.com": "join-lemmy.org",
-    "github.com": "codeberg.org",
-    "google.com/maps": "wego.here.com"
-  }
+  "chatgpt.com": "chat.mistral.ai",
+  "google.com": "ecosia.org",
+  "ebay.com": {
+    "Netherlands": "marktplaats.nl",
+    "Germany": "kleinanzeigen.ebay.de"
+  },
+  "gmail.com": "mail.proton.me",
+  "translate.google.com": "deepl.com",
+  "reddit.com": "join-lemmy.org",
+  "github.com": "codeberg.org",
+  "google.com/maps": "wego.here.com"
 }
