@@ -36,17 +36,6 @@ function updateSelectedCountryUI(country) {
     autocompleteList.innerHTML = "";
 }
 
-// Load stored redirect preference from local storage and update the checkbox
-chrome.storage.local.get("redirectEnabled", (data) => {
-    const redirectCheckbox = document.getElementById("redirect-checkbox");
-    redirectCheckbox.checked = data.redirectEnabled || false;
-});
-
-// Event listener for the redirect checkbox
-document.getElementById("redirect-checkbox").addEventListener("change", function () {
-    chrome.storage.local.set({ redirectEnabled: this.checked });
-});
-
 // Load stored country from local storage, and update the UI
 chrome.storage.local.get("selectedCountry", (data) => {
     if (data.selectedCountry) {

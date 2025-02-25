@@ -50,8 +50,3 @@ p {
 .autocomplete-items div:hover {
     background-color: #e0e0e0;
 }
-
-.redirect {
-    display: flex;
-    flex-direction: row;
-}

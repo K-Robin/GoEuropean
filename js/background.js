@@ -46,13 +46,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 }
             }
 
-            chrome.storage.local.get("redirectEnabled", (data) => {
-                if(data.redirectEnabled && alternative) {
-                    chrome.tabs.update(sender.tab.id, { url: alternative });
-                } else {
-                    sendResponse({ alternative });
-                }
-            })
+            sendResponse({ alternative });
         });
 
         return true;
