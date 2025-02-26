@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     padding: 10px;
     width: 300px;
-    background-color: lightskyblue;
+    background-color: #4285f4;
+    border-radius: 5px;
 }
 
 h1 {
