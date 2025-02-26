@@ -1,8 +1,5 @@
 // popup.js
 
-// Use either browser (Firefox) or chrome API
-const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
-
 let countryMappings = {};
 let availableCountries = [];
 let currentHostname = '';
@@ -11,7 +8,7 @@ let whitelistedSites = [];
 // Load the mappings and populate available countries
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch country mappings from the JSON file
-    fetch(browserAPI.runtime.getURL('countryMappings.json'))
+    fetch(chrome.runtime.getURL('countryMappings.json'))
         .then(response => response.json())
         .then(data => {
             countryMappings = data;
@@ -33,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Available countries:", availableCountries);
 
             // Load whitelisted sites
-            browserAPI.storage.local.get("whitelistedSites", (data) => {
+            chrome.storage.local.get("whitelistedSites", (data) => {
                 whitelistedSites = data.whitelistedSites || [];
                 console.log("Loaded whitelisted sites:", whitelistedSites);
 
@@ -43,13 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error("Error loading mappings:", error);
-            document.getElementById("message").textContent = "Error loading alternative sites data.";
+            const messageEl = document.getElementById("message");
+            messageEl.textContent = "Error loading alternative sites data.";
         });
 });
 
 function setupUI() {
     // Get the current active tab URL
-    browserAPI.tabs.query({active: true, currentWindow: true}, (tabs) => {
+    chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
         if (tabs[0] && tabs[0].url) {
             try {
                 const url = new URL(tabs[0].url);
@@ -62,7 +60,7 @@ function setupUI() {
                 updateWhitelistButton();
 
                 // Get the selected country from local storage
-                browserAPI.storage.local.get("selectedCountry", (data) => {
+                chrome.storage.local.get("selectedCountry", (data) => {
                     const userCountry = data.selectedCountry || null;
                     updateSelectedCountryUI(userCountry);
 
@@ -132,7 +130,7 @@ function setupUI() {
     });
 
     removeBtn.addEventListener("click", function () {
-        browserAPI.storage.local.remove("selectedCountry", () => {
+        chrome.storage.local.remove("selectedCountry", () => {
             updateSelectedCountryUI(null);
         });
     });
@@ -142,14 +140,17 @@ function setupUI() {
     whitelistBtn.addEventListener("click", toggleWhitelist);
 
     function showAutoComplete(countries) {
-        autocompleteList.innerHTML = "";
+        // Clear the autocomplete list first
+        while (autocompleteList.firstChild) {
+            autocompleteList.removeChild(autocompleteList.firstChild);
+        }
 
         countries.forEach(country => {
             const item = document.createElement("div");
             item.className = "autocomplete-item";
             item.textContent = country;
             item.addEventListener("click", function () {
-                browserAPI.storage.local.set({selectedCountry: country}, () => {
+                chrome.storage.local.set({selectedCountry: country}, () => {
                     updateSelectedCountryUI(country);
                 });
             });
@@ -161,29 +162,54 @@ function setupUI() {
 function displayAlternatives(alternatives) {
     const messageElement = document.getElementById("message");
 
+    // Clear the message element first
+    while (messageElement.firstChild) {
+        messageElement.removeChild(messageElement.firstChild);
+    }
+
     if (alternatives.length === 0) {
         if (isWhitelisted(currentHostname)) {
-            messageElement.innerHTML = "This site is whitelisted. No alternatives will be shown.";
+            messageElement.textContent = "This site is whitelisted. No alternatives will be shown.";
         } else {
-            messageElement.innerHTML = "No alternatives found for this site.";
+            messageElement.textContent = "No alternatives found for this site.";
         }
         return;
     }
 
-    // Create a list of alternatives
-    let html = "<div class='alternatives-list'>";
-    html += "<h3>European Alternatives:</h3>";
-    html += "<ul>";
+    // Create alternatives container
+    const container = document.createElement('div');
+    container.className = 'alternatives-list';
+
+    // Create header
+    const header = document.createElement('h3');
+    header.textContent = 'European Alternatives:';
+    container.appendChild(header);
+
+    // Create list
+    const list = document.createElement('ul');
 
     alternatives.forEach(alt => {
-        html += `<li>
-            <a href="https://${alt.url}" target="_blank">${alt.name}</a>
-            <span class="alt-url">(${alt.url})</span> - ${alt.origin}
-        </li>`;
+        const listItem = document.createElement('li');
+
+        const link = document.createElement('a');
+        link.href = `https://${alt.url}`;
+        link.target = '_blank';
+        link.textContent = alt.name;
+
+        const urlSpan = document.createElement('span');
+        urlSpan.className = 'alt-url';
+        urlSpan.textContent = ` (${alt.url})`;
+
+        const originText = document.createTextNode(` - ${alt.origin}`);
+
+        listItem.appendChild(link);
+        listItem.appendChild(urlSpan);
+        listItem.appendChild(originText);
+        list.appendChild(listItem);
     });
 
-    html += "</ul></div>";
-    messageElement.innerHTML = html;
+    container.appendChild(list);
+    messageElement.appendChild(container);
 }
 
 function updateSelectedCountryUI(country) {
@@ -201,7 +227,10 @@ function updateSelectedCountryUI(country) {
         removeBtn.style.display = "none";
     }
 
-    autocompleteList.innerHTML = "";
+    // Clear the autocomplete list
+    while (autocompleteList.firstChild) {
+        autocompleteList.removeChild(autocompleteList.firstChild);
+    }
 }
 
 // Whitelist functionality
@@ -219,12 +248,12 @@ function toggleWhitelist() {
     }
 
     // Save updated whitelist to storage
-    browserAPI.storage.local.set({whitelistedSites: whitelistedSites}, () => {
+    chrome.storage.local.set({whitelistedSites: whitelistedSites}, () => {
         console.log("Updated whitelisted sites:", whitelistedSites);
         updateWhitelistButton();
 
         // If we whitelisted, refresh the alternatives display
-        browserAPI.storage.local.get("selectedCountry", (data) => {
+        chrome.storage.local.get("selectedCountry", (data) => {
             const userCountry = data.selectedCountry || null;
             let alternatives = [];
 

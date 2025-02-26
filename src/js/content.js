@@ -7,7 +7,7 @@ function suggestAlternative() {
     console.log("Current hostname:", hostname);
 
     // First check if the site is whitelisted
-    (chrome.storage || browser.storage).local.get("whitelistedSites", (data) => {
+    chrome.storage.local.get("whitelistedSites", (data) => {
         const whitelistedSites = data.whitelistedSites || [];
 
         // If site is whitelisted, don't show alternatives
@@ -17,7 +17,7 @@ function suggestAlternative() {
         }
 
         // Continue with checking alternatives
-        (chrome.runtime || browser.runtime).sendMessage({
+        chrome.runtime.sendMessage({
             action: "checkAlternative",
             url: hostname
         }, (response) => {
@@ -215,7 +215,6 @@ function suggestAlternative() {
                 notification.className = 'notification-notification';
                 notification.id = 'go-european-notification';
 
-
                 // Remove any existing notification first
                 const existingNotification = document.getElementById('go-european-notification');
                 if (existingNotification) {
@@ -224,34 +223,88 @@ function suggestAlternative() {
 
                 // Generate alternatives HTML - limiting to maximum 4 for UI stability
                 const displayedAlternatives = response.alternatives.slice(0, 4);
-                let alternativesHtml = displayedAlternatives.map(alt =>
-                    `<li class="notification-list-item">
-                        <a href="https://${alt.url}" class="notification-site-link" target="_blank">${alt.name}</a>
-                        <span class="notification-site-url">(${alt.url})</span>
-                        <span class="notification-site-origin">${alt.origin}</span>
-                    </li>`
-                ).join('');
+
+                // Create header
+                const headerDiv = document.createElement('div');
+                headerDiv.className = 'notification-header';
+
+                const titleH3 = document.createElement('h3');
+                titleH3.className = 'notification-title';
+                titleH3.textContent = 'Go European';
+
+                const closeButton = document.createElement('button');
+                closeButton.className = 'notification-close';
+                closeButton.id = 'notification-close';
+                closeButton.textContent = '×';
+
+                headerDiv.appendChild(titleH3);
+                headerDiv.appendChild(closeButton);
+                notification.appendChild(headerDiv);
+
+                // Create text paragraph
+                const textP = document.createElement('p');
+                textP.className = 'notification-text';
+                textP.textContent = 'Consider using these European alternatives:';
+                notification.appendChild(textP);
+
+                // Create alternatives list
+                const altList = document.createElement('ul');
+                altList.className = 'notification-list';
+
+                displayedAlternatives.forEach(alt => {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'notification-list-item';
+
+                    const link = document.createElement('a');
+                    link.className = 'notification-site-link';
+                    link.href = `https://${alt.url}`;
+                    link.target = '_blank';
+                    link.textContent = alt.name;
+
+                    const urlSpan = document.createElement('span');
+                    urlSpan.className = 'notification-site-url';
+                    urlSpan.textContent = `(${alt.url})`;
+
+                    const originSpan = document.createElement('span');
+                    originSpan.className = 'notification-site-origin';
+                    originSpan.textContent = alt.origin;
+
+                    listItem.appendChild(link);
+                    listItem.appendChild(urlSpan);
+                    listItem.appendChild(originSpan);
+                    altList.appendChild(listItem);
+                });
 
                 // Add a note if we truncated the list
                 const moreCount = response.alternatives.length - displayedAlternatives.length;
                 if (moreCount > 0) {
-                    alternativesHtml += `<li class="notification-list-item">
-                        <span>+${moreCount} more alternatives. View all in the extension popup.</span>
-                    </li>`;
+                    const moreItem = document.createElement('li');
+                    moreItem.className = 'notification-list-item';
+                    const moreSpan = document.createElement('span');
+                    moreSpan.textContent = `+${moreCount} more alternatives. View all in the extension popup.`;
+                    moreItem.appendChild(moreSpan);
+                    altList.appendChild(moreItem);
                 }
 
-                notification.innerHTML = `
-                    <div class="notification-header">
-                        <h3 class="notification-title">Go European</h3>
-                        <button class="notification-close" id="notification-close">×</button>
-                    </div>
-                    <p class="notification-text">Consider using these European alternatives:</p>
-                    <ul class="notification-list">${alternativesHtml}</ul>
-                    <div class="notification-footer">
-                        <button class="notification-whitelist-btn" id="notification-whitelist">Don't show again for this site</button>
-                        <button class="notification-dismiss-btn" id="notification-dismiss">Got it</button>
-                    </div>
-                `;
+                notification.appendChild(altList);
+
+                // Create footer
+                const footerDiv = document.createElement('div');
+                footerDiv.className = 'notification-footer';
+
+                const whitelistButton = document.createElement('button');
+                whitelistButton.className = 'notification-whitelist-btn';
+                whitelistButton.id = 'notification-whitelist';
+                whitelistButton.textContent = "Don't show again for this site";
+
+                const dismissButton = document.createElement('button');
+                dismissButton.className = 'notification-dismiss-btn';
+                dismissButton.id = 'notification-dismiss';
+                dismissButton.textContent = 'Got it';
+
+                footerDiv.appendChild(whitelistButton);
+                footerDiv.appendChild(dismissButton);
+                notification.appendChild(footerDiv);
 
                 // Append to body
                 if (document.body) {
@@ -284,11 +337,11 @@ function suggestAlternative() {
                 // Add click event to whitelist button
                 document.getElementById('notification-whitelist')?.addEventListener('click', function() {
                     // Add current site to whitelist
-                    (chrome.storage || browser.storage).local.get("whitelistedSites", (data) => {
+                    chrome.storage.local.get("whitelistedSites", (data) => {
                         const whitelistedSites = data.whitelistedSites || [];
                         if (!whitelistedSites.includes(hostname)) {
                             whitelistedSites.push(hostname);
-                            (chrome.storage || browser.storage).local.set({whitelistedSites: whitelistedSites}, () => {
+                            chrome.storage.local.set({whitelistedSites: whitelistedSites}, () => {
                                 console.log("Site added to whitelist:", hostname);
                             });
                         }
