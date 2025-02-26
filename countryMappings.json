@@ -27,13 +27,30 @@
     ]
   },
   "www.amazon.com": {
-    "countrySpecific": {
-      "Poland": {
-        "url": "www.allegro.pl",
-        "name": "Allegro",
-        "origin": "Poland"
+    "countrySpecific": [
+      {
+        "Poland": {
+          "url": "allegro.pl",
+          "name": "Allegro",
+          "origin": "Poland"
+        },
+        "Germany": {
+          "url": "otto.de",
+          "name": "Otto",
+          "origin": "Germany"
+        },
+        "France": {
+          "url": "fnac.com",
+          "name": "Fnac",
+          "origin": "France"
+        },
+        "Netherlands": {
+          "url": "bol.com",
+          "name": "Bol",
+          "origin": "Netherlands"
+        }
       }
-    },
+    ],
     "alternatives": [
       {
         "url": "galaxus.ch/en",
@@ -90,6 +107,104 @@
         "url": "4fstore.com",
         "name": "4F",
         "origin": "Poland"
+      }
+    ]
+  },
+  "music.youtube.com": {
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "music.apple.com": {
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "instagram.com": {
+    "alternatives": [
+      {
+        "url": "pixelfed.org",
+        "name": "PixelFed",
+        "origin": "Open Source"
+      },
+      {
+        "url": "bereal.com",
+        "name": "BeReal",
+        "origin": "France"
+      }
+    ]
+  },
+  "netlify.com": {
+    "alternatives": [
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "statichost.eu",
+        "name": "StaticHost",
+        "origin": "Sweden"
+      }
+    ]
+  },
+  "vercel.com": {
+    "alternatives": [
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "statichost.eu",
+        "name": "StaticHost",
+        "origin": "Sweden"
+      }
+    ]
+  },
+  "x.com": {
+    "alternatives": [
+      {
+        "url": "joinmastodon.org",
+        "name": "Mastodon",
+        "origin": "Open Source"
+      }
+    ]
+  },
+  "grammarly.com": {
+    "alternatives": [
+      {
+        "url": "languagetool.org",
+        "name": "LanguageTool",
+        "origin": "Germany"
       }
     ]
   }
