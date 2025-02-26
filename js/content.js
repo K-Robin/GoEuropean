@@ -28,7 +28,7 @@ function suggestAlternative() {
             notification.style.maxWidth = '400px';
 
             let alternativesHtml = response.alternatives.map(alt =>
-                `<li><a href="https://${alt.url}" style="color: white; font-weight: bold;">${alt.name}</a> (${alt.url})</li>`
+                `<li><a href="https://${alt.url}" style="color: white; font-weight: bold;">${alt.name}</a> (${alt.url}) - ${alt.origin}</li>`
             ).join('');
 
             notification.innerHTML = `

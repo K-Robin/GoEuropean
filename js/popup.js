@@ -127,7 +127,7 @@ function displayAlternatives(alternatives) {
     alternatives.forEach(alt => {
         html += `<li>
             <a href="https://${alt.url}" target="_blank">${alt.name}</a>
-            <span class="alt-url">(${alt.url})</span>
+            <span class="alt-url">(${alt.url})</span> - ${alt.origin}
         </li>`;
     });
 

@@ -4,7 +4,7 @@
       {
         "url": "https://chat.mistral.ai/",
         "name": "Mistral",
-        "origin": "France"
+        "origin": "France \uD83E\uDD50"
       }
     ]
   },
@@ -13,7 +13,7 @@
       {
         "url": "https://mullvad.net/en",
         "name": "Mullvad VPN",
-        "origin": "Sweden"
+        "origin": "Sweden "
       }
     ]
   },
@@ -31,5 +31,19 @@
         "name": "eBay Germany"
       }
     }
+  },
+  "https://marketingplatform.google.com/about/analytics/": {
+    "alternatives": [
+      {
+        "url": "https://plausible.io/",
+        "name": "Plausible",
+        "origin": "Estonia \uD83D\uDDA5\uFE0F"
+      },
+      {
+        "url": "https://www.simpleanalytics.com/",
+        "name": "Simple Analytics",
+        "origin": "Netherlands \uD83C\uDF37"
+      }
+    ]
   }
 }
