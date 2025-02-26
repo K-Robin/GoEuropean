@@ -57,10 +57,12 @@ function setupUI() {
                     if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
                         alternatives = [
                             ...alternatives,
-                            ...siteData.countrySpecific[userCountry]
-                        ]
-                    } else if(siteData.alternatives) {
-                        alternatives = [...siteData.alternatives];
+                            siteData.countrySpecific[userCountry]
+                        ];
+                    }
+
+                    if (siteData.alternatives) {
+                        alternatives = [...alternatives, ...siteData.alternatives];
                     }
 
                     alternatives = alternatives.filter((alt, index, self) =>

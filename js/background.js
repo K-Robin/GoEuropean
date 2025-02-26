@@ -28,15 +28,19 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             // Check if site exists in our mappings
             if(countryMappings[hostname]) {
                 const siteData = countryMappings[hostname];
+                console.log("Found site data:", siteData);
 
                 if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
                     alternatives = [
                         ...alternatives,
-                        ...siteData.countrySpecific[userCountry]
-                    ]
-                } else if(siteData.alternatives && siteData.countrySpecific) {
-                    alternatives = [...siteData.alternatives];
+                        siteData.countrySpecific[userCountry]
+                    ];
                 }
+
+                if (siteData.alternatives) {
+                    alternatives = [...alternatives, ...siteData.alternatives];
+                }
+
 
                 alternatives = alternatives.filter((alt, index, self) =>
                     index === self.findIndex(a => a.url === alt.url)
