@@ -1,3 +1,5 @@
+// background.js
+
 // Initialize countryMappings
 let countryMappings = {};
 
@@ -30,11 +32,14 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 const siteData = countryMappings[hostname];
                 console.log("Found site data:", siteData);
 
-                if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
-                    alternatives = [
-                        ...alternatives,
-                        siteData.countrySpecific[userCountry]
-                    ];
+                if (userCountry && siteData.countrySpecific) {
+                    const countrySpecificData = siteData.countrySpecific[userCountry];
+
+                    if (Array.isArray(countrySpecificData)) {
+                        alternatives = [...alternatives, ...countrySpecificData];
+                    } else if (countrySpecificData) {
+                        alternatives = [...alternatives, countrySpecificData];
+                    }
                 }
 
                 if (siteData.alternatives) {

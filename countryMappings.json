@@ -2,48 +2,36 @@
   "chatgpt.com": {
     "alternatives": [
       {
-        "url": "https://chat.mistral.ai/",
+        "url": "chat.mistral.ai",
         "name": "Mistral",
-        "origin": "France \uD83E\uDD50"
-      }
-    ]
-  },
-  "nordvpn.com": {
-    "alternatives": [
-      {
-        "url": "https://mullvad.net/en",
-        "name": "Mullvad VPN",
-        "origin": "Sweden "
+        "origin": "France"
       }
     ]
   },
   "www.ebay.com": {
-    "alternatives": [
-      {
-        "url": "https://www.ebay.co.uk/",
-        "name": "eBay UK",
-        "origin": "United Kingdom"
-      }
-    ],
     "countrySpecific": {
-      "Germany": {
-        "url": "https://www.ebay.de/",
-        "name": "eBay Germany"
-      }
-    }
-  },
-  "https://marketingplatform.google.com/about/analytics/": {
-    "alternatives": [
-      {
-        "url": "https://plausible.io/",
-        "name": "Plausible",
-        "origin": "Estonia \uD83D\uDDA5\uFE0F"
+      "Netherlands": {
+        "url": "www.marktplaats.nl",
+        "name": "Marktplaats",
+        "origin": "Netherlands"
       },
-      {
-        "url": "https://www.simpleanalytics.com/",
-        "name": "Simple Analytics",
-        "origin": "Netherlands \uD83C\uDF37"
-      }
-    ]
+      "Austria": {
+        "url": "vinted.com",
+        "name": "Vinted",
+        "origin": "Lithuania"
+      },
+      "Belgium": [
+        {
+          "url": "www.2dehands.be",
+          "name": "2dehands",
+          "origin": "Belgium"
+        },
+        {
+          "url": "vinted.com",
+          "name": "Vinted",
+          "origin": "Lithuania"
+        }
+      ]
+    }
   }
 }

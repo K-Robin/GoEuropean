@@ -54,11 +54,14 @@ function setupUI() {
                 if(countryMappings[hostname]) {
                     const siteData = countryMappings[hostname];
 
-                    if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
-                        alternatives = [
-                            ...alternatives,
-                            siteData.countrySpecific[userCountry]
-                        ];
+                    if (userCountry && siteData.countrySpecific) {
+                        const countrySpecificData = siteData.countrySpecific[userCountry];
+
+                        if (Array.isArray(countrySpecificData)) {
+                            alternatives = [...alternatives, ...countrySpecificData];
+                        } else if (countrySpecificData) {
+                            alternatives = [...alternatives, countrySpecificData];
+                        }
                     }
 
                     if (siteData.alternatives) {
