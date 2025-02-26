@@ -8,30 +8,89 @@
       }
     ]
   },
-  "www.ebay.com": {
+  "store.steampowered.com": {
+    "alternatives": [
+      {
+        "url": "gog.com",
+        "name": "GOG",
+        "origin": "Poland"
+      }
+    ]
+  },
+  "translate.google.com": {
+    "alternatives": [
+      {
+        "url": "deepl.com",
+        "name": "DeepL",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.amazon.com": {
     "countrySpecific": {
-      "Netherlands": {
-        "url": "www.marktplaats.nl",
-        "name": "Marktplaats",
-        "origin": "Netherlands"
+      "Poland": {
+        "url": "www.allegro.pl",
+        "name": "Allegro",
+        "origin": "Poland"
+      }
+    },
+    "alternatives": [
+      {
+        "url": "galaxus.ch/en",
+        "name": "Galaxus",
+        "origin": "Switzerland"
+      }
+    ]
+  },
+  "www.google.com": {
+    "alternatives": [
+      {
+        "url": "qwant.com",
+        "name": "Qwant",
+        "origin": "France"
       },
-      "Austria": {
-        "url": "vinted.com",
-        "name": "Vinted",
-        "origin": "Lithuania"
+      {
+        "url": "ecosia.org",
+        "name": "Ecosia",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.uber.com": {
+    "alternatives": [
+      {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      }
+    ]
+  },
+  "www.reddit.com": {
+    "alternatives": [
+      {
+        "url": "join-lemmy.org",
+        "name": "Lemmy",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.nike.com": {
+    "alternatives": [
+      {
+        "url": "adidas.com",
+        "name": "Adidas",
+        "origin": "Germany"
       },
-      "Belgium": [
-        {
-          "url": "www.2dehands.be",
-          "name": "2dehands",
-          "origin": "Belgium"
-        },
-        {
-          "url": "vinted.com",
-          "name": "Vinted",
-          "origin": "Lithuania"
-        }
-      ]
-    }
+      {
+        "url": "puma.com",
+        "name": "Puma",
+        "origin": "Germany"
+      },
+      {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      }
+    ]
   }
 }
