@@ -103,17 +103,19 @@ p {
 }
 
 .remove-button {
-    display: none;
+    display: inline;
     background: none;
     border: none;
-    color: #757575;
+    color: #e53935;
     font-size: 18px;
     cursor: pointer;
     margin-left: 8px;
+    line-height: 1;
+    padding: 0;
 }
 
 .remove-button:hover {
-    color: #e53935;
+    color: #d32f2f;
 }
 
 .autocomplete-items {
