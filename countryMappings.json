@@ -1,12 +1,13 @@
 {
   "chatgpt.com": "chat.mistral.ai",
-  "www.google.com": "ecosia.org",
-  "www.ebay.com": {
+  "google.com": "ecosia.org",
+  "ebay.com": {
     "Netherlands": "marktplaats.nl",
     "Germany": "kleinanzeigen.ebay.de"
   },
+  "gmail.com": "mail.proton.me",
   "translate.google.com": "deepl.com",
-  "www.reddit.com": "join-lemmy.org",
-  "www.github.com": "codeberg.org",
+  "reddit.com": "join-lemmy.org",
+  "github.com": "codeberg.org",
   "google.com/maps": "wego.here.com"
 }

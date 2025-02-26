@@ -1,6 +1,4 @@
 // Initialize countryMappings
-import {getAlternatives} from "./utils";
-
 let countryMappings = {};
 
 // Fetch country mappings from the JSON file
@@ -25,7 +23,21 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             const userCountry = data.selectedCountry || null;
             console.log("User country:", userCountry);
 
-            let alternative = getAlternatives(hostname, userCountry, countryMappings);
+            let alternative = null;
+
+            // Check if the site exists in our mappings
+            if (countryMappings[hostname]) {
+                const mapping = countryMappings[hostname];
+
+                // If it's a string, it's a direct mapping
+                if (typeof mapping === "string") {
+                    alternative = mapping;
+                }
+                // If it's an object, it has country-specific mappings
+                else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
+                    alternative = mapping[userCountry];
+                }
+            }
 
             console.log("Found alternative:", alternative);
             sendResponse({ alternative });
