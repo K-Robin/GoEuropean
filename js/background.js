@@ -1,10 +1,13 @@
 // background.js
 
+// Use either browser (Firefox) or chrome API
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
 // Initialize countryMappings
 let countryMappings = {};
 
 // Fetch country mappings from the JSON file
-fetch(chrome.runtime.getURL('countryMappings.json'))
+fetch(browserAPI.runtime.getURL('countryMappings.json'))
     .then(response => response.json())
     .then(data => {
         countryMappings = data;
@@ -15,13 +18,13 @@ fetch(chrome.runtime.getURL('countryMappings.json'))
     });
 
 // Listener for messages from other parts of the extension
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "checkAlternative") {
         const hostname = request.url;
         console.log("Checking alternative for:", hostname);
-        console.log("Current mappings:", countryMappings);
 
-        chrome.storage.local.get("selectedCountry", (data) => {
+        // Get user country and check alternatives
+        browserAPI.storage.local.get("selectedCountry", (data) => {
             const userCountry = data.selectedCountry || null;
             console.log("User country:", userCountry);
 
@@ -46,13 +49,13 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     alternatives = [...alternatives, ...siteData.alternatives];
                 }
 
-
+                // Remove duplicates
                 alternatives = alternatives.filter((alt, index, self) =>
                     index === self.findIndex(a => a.url === alt.url)
                 );
             }
 
-            console.log("Found alternative:", alternatives);
+            console.log("Found alternatives:", alternatives);
             sendResponse({alternatives});
         });
 

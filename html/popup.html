@@ -4,18 +4,30 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-<h1>Go Europe</h1>
-<div class="country-selector">
-    <p>Fill in your country here for country specific suggestions!
-        If your country is not on the list, there are no specific suggestions
-        for that country</p>
-    <div style="display: flex; align-items: center; width: 100%;">
-        <input id="country-input" placeholder="Fill in your country here">
-        <span id="remove-btn" style="display: none;">X</span>
+<div class="container">
+    <h1>Go European</h1>
+
+    <div class="current-site-info">
+        <div class="site-label">Current website: <span id="current-site">Loading...</span></div>
+        <button id="whitelist-btn" class="action-button">Whitelist</button>
+        <div class="info-text">Whitelisting a website will remove pop-ups for alternate websites on that website</div>
     </div>
-    <div id="autocomplete-list" class="autocomplete-items"></div>
+
+    <div class="divider"></div>
+
+    <div class="country-selector">
+        <p>Fill in your country here for country specific suggestions!
+            If your country is not on the list, there are no specific suggestions
+            for that country</p>
+        <div class="input-container">
+            <input id="country-input" placeholder="Fill in your country here">
+            <button id="remove-btn" class="remove-button">×</button>
+        </div>
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+    </div>
+
+    <div id="message" class="message-container">Visit a website to see suggestions!</div>
 </div>
-<div id="message">Visit a website to see suggestions!</div>
 <script src="../js/popup.js"></script>
 </body>
 </html>

@@ -24,5 +24,19 @@
       "resources": ["countryMappings.json"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "goeuropean@example.com",
+      "strict_min_version": "79.0",
+      "background": {
+        "page": "html/background.html"
+      }
+    }
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  }
 }
