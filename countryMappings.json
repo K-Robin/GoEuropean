@@ -1,13 +1,35 @@
 {
-  "chatgpt.com": "chat.mistral.ai",
-  "google.com": "ecosia.org",
-  "ebay.com": {
-    "Netherlands": "marktplaats.nl",
-    "Germany": "kleinanzeigen.ebay.de"
+  "chatgpt.com": {
+    "alternatives": [
+      {
+        "url": "https://chat.mistral.ai/",
+        "name": "Mistral",
+        "origin": "France"
+      }
+    ]
   },
-  "gmail.com": "mail.proton.me",
-  "translate.google.com": "deepl.com",
-  "reddit.com": "join-lemmy.org",
-  "github.com": "codeberg.org",
-  "google.com/maps": "wego.here.com"
+  "nordvpn.com": {
+    "alternatives": [
+      {
+        "url": "https://mullvad.net/en",
+        "name": "Mullvad VPN",
+        "origin": "Sweden"
+      }
+    ]
+  },
+  "www.ebay.com": {
+    "alternatives": [
+      {
+        "url": "https://www.ebay.co.uk/",
+        "name": "eBay UK",
+        "origin": "United Kingdom"
+      }
+    ],
+    "countrySpecific": {
+      "Germany": {
+        "url": "https://www.ebay.de/",
+        "name": "eBay Germany"
+      }
+    }
+  }
 }

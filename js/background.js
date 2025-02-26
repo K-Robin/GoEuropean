@@ -23,23 +23,28 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             const userCountry = data.selectedCountry || null;
             console.log("User country:", userCountry);
 
-            let alternative = null;
+            let alternatives = [];
 
-            // Check if the site exists in our mappings
-            if (countryMappings[hostname]) {
-                const mapping = countryMappings[hostname];
-                // If it's a string, it's a direct mapping
-                if (typeof mapping === "string") {
-                    alternative = mapping;
+            // Check if site exists in our mappings
+            if(countryMappings[hostname]) {
+                const siteData = countryMappings[hostname];
+
+                if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
+                    alternatives = [
+                        ...alternatives,
+                        ...siteData.countrySpecific[userCountry]
+                    ]
+                } else if(siteData.alternatives && siteData.countrySpecific) {
+                    alternatives = [...siteData.alternatives];
                 }
-                // If it's an object, it has country-specific mappings
-                else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
-                    alternative = mapping[userCountry];
-                }
+
+                alternatives = alternatives.filter((alt, index, self) =>
+                    index === self.findIndex(a => a.url === alt.url)
+                );
             }
 
-            console.log("Found alternative:", alternative);
-            sendResponse({alternative});
+            console.log("Found alternative:", alternatives);
+            sendResponse({alternatives});
         });
 
         // Return true to indicate we'll respond asynchronously

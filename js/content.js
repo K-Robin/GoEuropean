@@ -11,7 +11,7 @@ function suggestAlternative() {
         url: hostname
     }, (response) => {
         console.log("Response from background:", response);
-        if (response && response.alternative) {
+        if (response && response.alternatives && response.alternatives.length > 0) {
             // Create a styled notification
             const notification = document.createElement('div');
             notification.style.position = 'fixed';
@@ -25,10 +25,15 @@ function suggestAlternative() {
             notification.style.zIndex = '10000';
             notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
             notification.style.fontFamily = 'Arial, sans-serif';
-            notification.style.maxWidth = '300px';
+            notification.style.maxWidth = '400px';
+
+            let alternativesHtml = response.alternatives.map(alt =>
+                `<li><a href="https://${alt.url}" style="color: white; font-weight: bold;">${alt.name}</a> (${alt.url})</li>`
+            ).join('');
 
             notification.innerHTML = `
-                <p>Consider using <a href="https://${response.alternative}" style="color: white; font-weight: bold;">${response.alternative}</a> as a European alternative.</p>
+                <p>Consider using these European alternatives:</p>
+                <ul style="padding-left: 20px;">${alternativesHtml}</ul>
                 <button style="background: white; color: #4285f4; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 10px;">Close</button>
             `;
 
@@ -39,12 +44,12 @@ function suggestAlternative() {
                 document.body.removeChild(notification);
             });
 
-            // Auto-remove after 11 seconds
+            // Auto-remove after 15 seconds
             setTimeout(() => {
                 if (document.body.contains(notification)) {
                     document.body.removeChild(notification);
                 }
-            }, 11000);
+            }, 15000);
         }
     });
 }
