@@ -28,7 +28,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             // Check if the site exists in our mappings
             if (countryMappings[hostname]) {
                 const mapping = countryMappings[hostname];
-
                 // If it's a string, it's a direct mapping
                 if (typeof mapping === "string") {
                     alternative = mapping;
@@ -40,7 +39,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             }
 
             console.log("Found alternative:", alternative);
-            sendResponse({ alternative });
+            sendResponse({alternative});
         });
 
         // Return true to indicate we'll respond asynchronously

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setupUI() {
     // Get the current active tab URL
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
         if (tabs[0] && tabs[0].url) {
             const url = new URL(tabs[0].url);
             const hostname = url.hostname;
@@ -50,12 +50,15 @@ function setupUI() {
                 console.log("Checking alternative for:", hostname);
                 let alternative = null;
 
+                // Check if the site exists in our mappings
                 if (countryMappings[hostname]) {
                     const mapping = countryMappings[hostname];
-
+                    // If it's a string, it's a direct mapping
                     if (typeof mapping === "string") {
                         alternative = mapping;
-                    } else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
+                    }
+                    // If it's an object, it has country-specific mappings
+                    else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
                         alternative = mapping[userCountry];
                     }
                 }
@@ -73,7 +76,7 @@ function setupUI() {
     const removeBtn = document.getElementById("remove-btn");
 
     // Set up event listeners
-    countryInput.addEventListener("input", function() {
+    countryInput.addEventListener("input", function () {
         const input = this.value.toLowerCase();
         const filteredCountries = availableCountries.filter(country =>
             country.toLowerCase().includes(input)
@@ -81,7 +84,7 @@ function setupUI() {
         showAutoComplete(filteredCountries);
     });
 
-    removeBtn.addEventListener("click", function() {
+    removeBtn.addEventListener("click", function () {
         chrome.storage.local.remove("selectedCountry", () => {
             updateSelectedCountryUI(null);
         });
@@ -94,8 +97,8 @@ function setupUI() {
             const item = document.createElement("div");
             item.className = "autocomplete-item";
             item.textContent = country;
-            item.addEventListener("click", function() {
-                chrome.storage.local.set({ selectedCountry: country }, () => {
+            item.addEventListener("click", function () {
+                chrome.storage.local.set({selectedCountry: country}, () => {
                     updateSelectedCountryUI(country);
                 });
             });

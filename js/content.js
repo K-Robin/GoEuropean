@@ -35,7 +35,7 @@ function suggestAlternative() {
             document.body.appendChild(notification);
 
             // Add click event to close button
-            notification.querySelector('button').addEventListener('click', function() {
+            notification.querySelector('button').addEventListener('click', function () {
                 document.body.removeChild(notification);
             });
 
