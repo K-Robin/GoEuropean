@@ -1,4 +1,8 @@
 // popup.js
+
+
+import {getAlternatives} from "./utils";
+
 let countryMappings = {};
 let availableCountries = [];
 
@@ -48,17 +52,8 @@ function setupUI() {
 
                 // Check for an alternative
                 console.log("Checking alternative for:", hostname);
-                let alternative = null;
 
-                if (countryMappings[hostname]) {
-                    const mapping = countryMappings[hostname];
-
-                    if (typeof mapping === "string") {
-                        alternative = mapping;
-                    } else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
-                        alternative = mapping[userCountry];
-                    }
-                }
+                let alternative = getAlternatives(hostname, userCountry,  countryMappings);
 
                 const messageElement = document.getElementById("message");
                 messageElement.textContent = alternative
