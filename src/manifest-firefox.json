@@ -8,7 +8,7 @@
     "storage"
   ],
   "background": {
-    "service_worker": "js/background.js"
+    "scripts": ["js/background.js"]
   },
   "content_scripts": [
     {
@@ -17,7 +17,12 @@
     }
   ],
   "action": {
-    "default_popup": "html/popup.html"
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    }
   },
   "web_accessible_resources": [
     {
@@ -28,10 +33,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "goeuropean@example.com",
-      "strict_min_version": "79.0",
-      "background": {
-        "page": "html/background.html"
-      }
+      "strict_min_version": "109.0"
     }
   },
   "icons": {
