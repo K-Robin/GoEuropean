@@ -4,6 +4,7 @@ body {
     width: 300px;
     background-color: #4285f4;
     border-radius: 5px;
+    color: white;
 }
 
 h1 {
@@ -42,12 +43,51 @@ p {
     top: 100%; /* Position the autocomplete list below the input field */
 }
 
-.autocomplete-items div {
+.autocomplete-item {
     padding: 10px;
     cursor: pointer;
     font-size: 16px;
+    background-color: #fff;
+    color: #333;
 }
 
-.autocomplete-items div:hover {
+.autocomplete-item:hover {
     background-color: #e0e0e0;
+}
+
+/* New styles for alternatives list */
+.alternatives-list {
+    margin-top: 15px;
+}
+
+.alternatives-list h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.alternatives-list ul {
+    padding-left: 15px;
+    margin-top: 5px;
+    list-style-type: disc;
+}
+
+.alternatives-list li {
+    margin-bottom: 8px;
+}
+
+.alternatives-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alternatives-list a:hover {
+    text-decoration: underline;
+}
+
+.alt-url {
+    color: #e0e0e0;
+    font-size: 12px;
+    margin-left: 5px;
 }

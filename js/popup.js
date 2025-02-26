@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Extract available countries from the mappings
             for (const site in countryMappings) {
-                const alternatives = countryMappings[site];
-                if (typeof alternatives === 'object') {
-                    Object.keys(alternatives).forEach(country => {
+                const siteData = countryMappings[site];
+                if (siteData.countrySpecific) {
+                    Object.keys(siteData.countrySpecific).forEach(country => {
                         if (!availableCountries.includes(country)) {
                             availableCountries.push(country);
                         }
@@ -48,25 +48,29 @@ function setupUI() {
 
                 // Check for an alternative
                 console.log("Checking alternative for:", hostname);
-                let alternative = null;
+                let alternatives = [];
 
-                // Check if the site exists in our mappings
-                if (countryMappings[hostname]) {
-                    const mapping = countryMappings[hostname];
-                    // If it's a string, it's a direct mapping
-                    if (typeof mapping === "string") {
-                        alternative = mapping;
+                // Check if site exists in our mappings
+                if(countryMappings[hostname]) {
+                    const siteData = countryMappings[hostname];
+
+                    if (userCountry && siteData.countrySpecific && siteData.countrySpecific[userCountry]) {
+                        alternatives = [
+                            ...alternatives,
+                            siteData.countrySpecific[userCountry]
+                        ];
                     }
-                    // If it's an object, it has country-specific mappings
-                    else if (typeof mapping === "object" && userCountry && mapping[userCountry]) {
-                        alternative = mapping[userCountry];
+
+                    if (siteData.alternatives) {
+                        alternatives = [...alternatives, ...siteData.alternatives];
                     }
+
+                    alternatives = alternatives.filter((alt, index, self) =>
+                        index === self.findIndex(a => a.url === alt.url)
+                    );
                 }
 
-                const messageElement = document.getElementById("message");
-                messageElement.textContent = alternative
-                    ? `Consider using ${alternative} as an alternative.`
-                    : "No alternative found for this site.";
+                displayAlternatives(alternatives);
             });
         }
     });
@@ -105,6 +109,30 @@ function setupUI() {
             autocompleteList.appendChild(item);
         });
     }
+}
+
+function displayAlternatives(alternatives) {
+    const messageElement = document.getElementById("message");
+
+    if (alternatives.length === 0) {
+        messageElement.innerHTML = "No alternatives found for this site.";
+        return;
+    }
+
+    // Create a list of alternatives
+    let html = "<div class='alternatives-list'>";
+    html += "<h3>European Alternatives:</h3>";
+    html += "<ul>";
+
+    alternatives.forEach(alt => {
+        html += `<li>
+            <a href="https://${alt.url}" target="_blank">${alt.name}</a>
+            <span class="alt-url">(${alt.url})</span> - ${alt.origin}
+        </li>`;
+    });
+
+    html += "</ul></div>";
+    messageElement.innerHTML = html;
 }
 
 function updateSelectedCountryUI(country) {
