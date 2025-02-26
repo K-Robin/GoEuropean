@@ -201,6 +201,12 @@ function suggestAlternative() {
                         background: #3367d6;
                         animation: goEuropeButtonHover 0.5s ease;
                     }
+                    
+                    .notification-notification {
+                    top: 9%;
+                    transform: translate(-50%, -20%);
+                    }
+                   
                 `;
                 document.head.appendChild(styleElement);
 
@@ -209,14 +215,15 @@ function suggestAlternative() {
                 notification.className = 'notification-notification';
                 notification.id = 'go-european-notification';
 
+
                 // Remove any existing notification first
                 const existingNotification = document.getElementById('go-european-notification');
                 if (existingNotification) {
                     document.body.removeChild(existingNotification);
                 }
 
-                // Generate alternatives HTML - limiting to maximum 6 for UI stability
-                const displayedAlternatives = response.alternatives.slice(0, 6);
+                // Generate alternatives HTML - limiting to maximum 4 for UI stability
+                const displayedAlternatives = response.alternatives.slice(0, 4);
                 let alternativesHtml = displayedAlternatives.map(alt =>
                     `<li class="notification-list-item">
                         <a href="https://${alt.url}" class="notification-site-link" target="_blank">${alt.name}</a>

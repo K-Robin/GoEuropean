@@ -27,30 +27,28 @@
     ]
   },
   "www.amazon.com": {
-    "countrySpecific": [
-      {
-        "Poland": {
-          "url": "allegro.pl",
-          "name": "Allegro",
-          "origin": "Poland"
-        },
-        "Germany": {
-          "url": "otto.de",
-          "name": "Otto",
-          "origin": "Germany"
-        },
-        "France": {
-          "url": "fnac.com",
-          "name": "Fnac",
-          "origin": "France"
-        },
-        "Netherlands": {
-          "url": "bol.com",
-          "name": "Bol",
-          "origin": "Netherlands"
-        }
+    "countrySpecific": {
+      "Poland": {
+        "url": "allegro.pl",
+        "name": "Allegro",
+        "origin": "Poland"
+      },
+      "Germany": {
+        "url": "otto.de",
+        "name": "Otto",
+        "origin": "Germany"
+      },
+      "France": {
+        "url": "fnac.com",
+        "name": "Fnac",
+        "origin": "France"
+      },
+      "Netherlands": {
+        "url": "bol.com",
+        "name": "Bol",
+        "origin": "Netherlands"
       }
-    ],
+    },
     "alternatives": [
       {
         "url": "galaxus.ch/en",
@@ -107,6 +105,16 @@
         "url": "4fstore.com",
         "name": "4F",
         "origin": "Poland"
+      },
+      {
+        "url": "decathlon.com",
+        "name": "Decathlon",
+        "origin": "France"
+      },
+      {
+        "url": "intersport.com",
+        "name": "Intersport",
+        "origin": "Switzerland"
       }
     ]
   },
