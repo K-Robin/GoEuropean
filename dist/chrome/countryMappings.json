@@ -171,7 +171,7 @@
       }
     ]
   },
-  "instagram.com": {
+  "www.instagram.com": {
     "alternatives": [
       {
         "url": "pixelfed.org",
@@ -185,7 +185,7 @@
       }
     ]
   },
-  "netlify.com": {
+  "www.netlify.com": {
     "alternatives": [
       {
         "url": "ionos.com",
@@ -222,7 +222,7 @@
       }
     ]
   },
-  "grammarly.com": {
+  "www.grammarly.com": {
     "alternatives": [
       {
         "url": "languagetool.org",
@@ -240,6 +240,15 @@
       }
     ]
   },
+  "about.gitlab.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
   "gitlab.com": {
     "alternatives": [
       {
@@ -249,7 +258,7 @@
       }
     ]
   },
-  "twilio.com": {
+  "www.twilio.com": {
     "alternatives": [
       {
         "url": "seven.io",
@@ -270,6 +279,42 @@
         "url": "smsgatewayapi.eu",
         "name": "smstools",
         "origin": "Belgium"
+      }
+    ]
+  },
+  "www.apple.com": {
+    "alternatives": [
+      {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "www.samsung.com": {
+    "alternatives": [
+      {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "www.dropbox.com": {
+    "alternatives": [
+      {
+        "url": "koofr.eu",
+        "name": "Koofr",
+        "origin": "Slovenia"
+      }
+    ]
+  },
+  "www.kingston.com": {
+    "alternatives": [
+      {
+        "url": "goodram.com",
+        "name": "GOODRAM",
+        "origin": "Poland"
       }
     ]
   }
