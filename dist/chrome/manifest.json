@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Go European",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Suggests European website alternatives to non-European websites.",
   "permissions": [
     "activeTab",
