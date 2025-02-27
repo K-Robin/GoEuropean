@@ -1,4 +1,23 @@
 {
+  "sharedAlternatives": {
+    "musicAlternatives": [
+        {
+            "url": "open.spotify.com",
+            "name": "Spotify",
+            "origin": "Sweden"
+        },
+        {
+            "url": "deezer.com",
+            "name": "Deezer",
+            "origin": "France"
+        },
+        {
+            "url": "soundcloud.com",
+            "name": "SoundCloud",
+            "origin": "Germany"
+        }
+    ]
+  },
   "chatgpt.com": {
     "alternatives": [
       {
@@ -119,23 +138,7 @@
     ]
   },
   "music.youtube.com": {
-    "alternatives": [
-      {
-        "url": "open.spotify.com",
-        "name": "Spotify",
-        "origin": "Sweden"
-      },
-      {
-        "url": "deezer.com",
-        "name": "Deezer",
-        "origin": "France"
-      },
-      {
-        "url": "soundcloud.com",
-        "name": "SoundCloud",
-        "origin": "Germany"
-      }
-    ]
+    "alternatives": "$ref:sharedAlternatives.musicAlternatives"
   },
   "music.apple.com": {
     "alternatives": [
@@ -213,6 +216,48 @@
         "url": "languagetool.org",
         "name": "LanguageTool",
         "origin": "Germany"
+      }
+    ]
+  },
+  "github.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "gitlab.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "twilio.com": {
+    "alternatives": [
+      {
+        "url": "seven.io",
+        "name": "Seven",
+        "origin": "Germany"
+      },
+      {
+        "url": "gatewayapi.com",
+        "name": "GatewayAPI",
+        "origin": "Denmark"
+      },
+      {
+        "url": "sms.to",
+        "name": "SMS.to",
+        "origin": "Cyprus"
+      },
+      {
+        "url": "smsgatewayapi.eu",
+        "name": "smstools",
+        "origin": "Belgium"
       }
     ]
   }
