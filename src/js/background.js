@@ -17,26 +17,6 @@ fetch(browserAPI.runtime.getURL('countryMappings.json'))
         console.error("Error loading mappings:", error);
     });
 
-// Helper function to find matching domain pattern
-function findMatchingDomainPattern(hostname) {
-    // Direct match first
-    if(countryMappings[hostname]){
-        return hostname;
-    }
-
-    const wildcardPatterns = Object.keys(countryMappings).filter(pattern => pattern.includes("*"));
-
-    for (const pattern of wildcardPatterns) {
-        const regexPattern = pattern.replace(/\./g, '\\.').replace(/\*/g, '.*');
-        const regex = new RegExp(`^${regexPattern}$`);
-
-        if (regex.test(hostname)) {
-            return pattern;
-        }
-    }
-
-    return null;
-}
 // Listener for messages from other parts of the extension
 browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "checkAlternative") {
@@ -50,13 +30,10 @@ browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
             let alternatives = [];
 
-            // Find matching domain pattern
-            const matchingPattern = findMatchingDomainPattern(hostname);
-
             // Check if site exists in our mappings
-            if (matchingPattern) {
-                const siteData = countryMappings[matchingPattern];
-                console.log(`Found site data for pattern ${matchingPattern}:`, siteData);
+            if(countryMappings[hostname]) {
+                const siteData = countryMappings[hostname];
+                console.log("Found site data:", siteData);
 
                 if (userCountry && siteData.countrySpecific) {
                     const countrySpecificData = siteData.countrySpecific[userCountry];
