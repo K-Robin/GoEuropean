@@ -26,6 +26,24 @@
       }
     ]
   },
+  "www.amazon.com.be": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.fr": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.it": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.es": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.nl": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.se": {
+    "ref": "www.amazon.com"
+  },
   "www.amazon.com": {
     "countrySpecific": {
       "Poland": {

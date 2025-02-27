@@ -1,23 +1,4 @@
 {
-  "sharedAlternatives": {
-    "musicAlternatives": [
-        {
-            "url": "open.spotify.com",
-            "name": "Spotify",
-            "origin": "Sweden"
-        },
-        {
-            "url": "deezer.com",
-            "name": "Deezer",
-            "origin": "France"
-        },
-        {
-            "url": "soundcloud.com",
-            "name": "SoundCloud",
-            "origin": "Germany"
-        }
-    ]
-  },
   "chatgpt.com": {
     "alternatives": [
       {
@@ -44,6 +25,24 @@
         "origin": "Germany"
       }
     ]
+  },
+  "www.amazon.com.be": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.fr": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.it": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.es": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.nl": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.se": {
+    "ref": "www.amazon.com"
   },
   "www.amazon.com": {
     "countrySpecific": {
@@ -138,7 +137,23 @@
     ]
   },
   "music.youtube.com": {
-    "alternatives": "$ref:sharedAlternatives.musicAlternatives"
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
   },
   "music.apple.com": {
     "alternatives": [
