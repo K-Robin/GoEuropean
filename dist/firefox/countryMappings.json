@@ -318,7 +318,7 @@
       }
     ]
   },
-  "aws.amazon.com/": {
+  "aws.amazon.com": {
     "alternatives": [
       {
         "url": "scaleway.com",
