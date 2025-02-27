@@ -17,6 +17,24 @@ fetch(browserAPI.runtime.getURL('countryMappings.json'))
         console.error("Error loading mappings:", error);
     });
 
+// Function to resolve site data based on hostname
+function resolveSiteData(hostname) {
+    // Check if the hostname exists in our mappings
+    if (!countryMappings[hostname]) {
+        return null;
+    }
+
+    // If this hostname refers to another one, get the referenced data
+    if (countryMappings[hostname].ref) {
+        const referredHostname = countryMappings[hostname].ref;
+        console.log(`${hostname} refers to ${referredHostname}`);
+        return countryMappings[referredHostname];
+    }
+
+    // Otherwise return the direct mapping
+    return countryMappings[hostname];
+}
+
 // Listener for messages from other parts of the extension
 browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "checkAlternative") {
@@ -30,9 +48,10 @@ browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
             let alternatives = [];
 
+            const siteData = resolveSiteData(hostname);
+
             // Check if site exists in our mappings
-            if(countryMappings[hostname]) {
-                const siteData = countryMappings[hostname];
+            if (siteData) {
                 console.log("Found site data:", siteData);
 
                 if (userCountry && siteData.countrySpecific) {

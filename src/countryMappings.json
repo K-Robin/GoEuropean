@@ -57,6 +57,21 @@
       }
     ]
   },
+  "www.amazon.de": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.it": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.fr": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.nl": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.co.uk": {
+    "ref": "www.amazon.com"
+  },
   "www.google.com": {
     "alternatives": [
       {

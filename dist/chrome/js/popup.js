@@ -5,6 +5,24 @@ let availableCountries = [];
 let currentHostname = '';
 let whitelistedSites = [];
 
+// Function to resolve domain reference and get actual site data
+function resolveSiteData(hostname) {
+    // Check if the hostname exists in our mappings
+    if (!countryMappings[hostname]) {
+        return null;
+    }
+
+    // If this hostname refers to another one, get the referenced data
+    if (countryMappings[hostname].ref) {
+        const referredHostname = countryMappings[hostname].ref;
+        console.log(`${hostname} refers to ${referredHostname}`);
+        return countryMappings[referredHostname];
+    }
+
+    // Otherwise return the direct mapping
+    return countryMappings[hostname];
+}
+
 // Load the mappings and populate available countries
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch country mappings from the JSON file
@@ -16,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Extract available countries from the mappings
             for (const site in countryMappings) {
+                // Skip references
+                if (countryMappings[site].ref) continue;
+
                 const siteData = countryMappings[site];
                 if (siteData.countrySpecific) {
                     Object.keys(siteData.countrySpecific).forEach(country => {
@@ -68,10 +89,11 @@ function setupUI() {
                     console.log("Checking alternative for:", currentHostname);
                     let alternatives = [];
 
-                    // Check if site exists in our mappings and is not whitelisted
-                    if(countryMappings[currentHostname] && !isWhitelisted(currentHostname)) {
-                        const siteData = countryMappings[currentHostname];
+                    // Get the site data, resolving references if needed
+                    const siteData = resolveSiteData(currentHostname);
 
+                    // Check if site exists in our mappings and is not whitelisted
+                    if(siteData && !isWhitelisted(currentHostname)) {
                         if (userCountry && siteData.countrySpecific) {
                             const countrySpecificData = siteData.countrySpecific[userCountry];
 
@@ -257,9 +279,10 @@ function toggleWhitelist() {
             const userCountry = data.selectedCountry || null;
             let alternatives = [];
 
-            if (countryMappings[currentHostname] && !isWhitelisted(currentHostname)) {
-                const siteData = countryMappings[currentHostname];
+            // Get the site data, resolving references if needed
+            const siteData = resolveSiteData(currentHostname);
 
+            if (siteData && !isWhitelisted(currentHostname)) {
                 if (userCountry && siteData.countrySpecific) {
                     const countrySpecificData = siteData.countrySpecific[userCountry];
 
