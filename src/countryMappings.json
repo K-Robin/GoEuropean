@@ -484,5 +484,70 @@
         "origin": "Netherlands"
       }
     ]
+  },
+  "patagonia.com": {
+    "alternatives": [
+      {
+        "url": "vaude.com",
+        "name": "Vaude",
+        "origin": "Germany"
+      },
+      {
+        "url": "fjallraven.com",
+        "name": "Fjällräven",
+        "origin": "Sweden"
+      },
+      {
+        "url": "norrona.com",
+        "name": "Norrona",
+        "origin": "Norway"
+      },
+      {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      {
+        "url": "decathlon.com",
+        "name": "Decathlon",
+        "origin": "France"
+      }
+    ]
+  },
+  "eu.patagonia.com": {
+    "ref": "patagonia.com"
+  },
+  "linkedin.com": {
+    "alternatives": [
+      {
+        "url": "xing.com",
+        "name": "XING",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "calendar.google.com": {
+    "alternatives": [
+      {
+        "url": "proton.me/calendar",
+        "name": "Proton Calendar",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "tuta.com/calendar",
+        "name": "Tuta",
+        "origin": "Germany"
+      },
+      {
+        "url": "calendar.online",
+        "name": "Calendar.online",
+        "origin": "Germany"
+      },
+      {
+        "url": "fruux.com",
+        "name": "Fruux",
+        "origin": "Germany"
+      }
+    ]
   }
 }
