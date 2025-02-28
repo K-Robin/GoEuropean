@@ -28,7 +28,7 @@
   },
   "web_accessible_resources": [
     "countryMappings.json",
-    "support.html"
+    "html/support.html"
   ],
   "icons": {
     "16": "img/icon16.png",
