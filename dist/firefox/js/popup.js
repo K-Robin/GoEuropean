@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set up Support Us button
     document.getElementById("support-us-btn").addEventListener("click", function() {
-        chrome.tabs.create({url: "html/support.html"});
+        chrome.tabs.create({url: "../html/support.html"});
     });
 });
 
