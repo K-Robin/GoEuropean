@@ -11,12 +11,34 @@ body {
     padding: 16px;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 0 0 16px 0;
-    color: #4285f4;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
     border-bottom: 2px solid #4285f4;
     padding-bottom: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #4285f4;
+}
+
+.support-button {
+    background-color: #81c784;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.support-button:hover {
+    background-color: #66bb6a;
 }
 
 p {
@@ -121,6 +143,7 @@ p {
 .autocomplete-items {
     width: 100%;
     border: 1px solid #e0e0e0;
+    border-bottom: none;
     border-top: none;
     border-radius: 0 0 4px 4px;
     z-index: 99;
