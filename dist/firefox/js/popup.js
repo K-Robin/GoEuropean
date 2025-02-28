@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const messageEl = document.getElementById("message");
             messageEl.textContent = "Error loading alternative sites data.";
         });
+
+    // Set up Support Us button
+    document.getElementById("support-us-btn").addEventListener("click", function() {
+        chrome.tabs.create({url: "html/support.html"});
+    });
 });
 
 function setupUI() {
