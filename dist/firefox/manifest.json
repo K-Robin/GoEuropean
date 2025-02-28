@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Go European",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Suggests European website alternatives to non-European websites.",
   "permissions": [
     "activeTab",
@@ -33,7 +33,8 @@
     }
   },
   "web_accessible_resources": [
-    "countryMappings.json"
+    "countryMappings.json",
+    "support.html"
   ],
   "icons": {
     "16": "img/icon16.png",
