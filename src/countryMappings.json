@@ -47,6 +47,11 @@
         "url": "bol.com",
         "name": "Bol",
         "origin": "Netherlands"
+      },
+      "Slovenia": {
+        "url": "mimovrste.com",
+        "name": "Mimovrste",
+        "origin": "Slovenia"
       }
     },
     "alternatives": [
