@@ -1,11 +1,5 @@
 {
   "www.samsung.com": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
+    "ref": "01-phone-category"
   }
 }

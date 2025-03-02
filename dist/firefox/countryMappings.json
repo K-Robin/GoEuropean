@@ -1,4 +1,158 @@
 {
+  "01-phone-category": {
+    "countrySpecific": {
+      "Austria": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Belgium": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Bulgaria": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Croatia": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Czech Republic": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Denmark": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Estonia": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Finland": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Germany": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Greece": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Hungary": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Ireland": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Italy": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Latvia": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Liechtenstein": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Lithuania": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Luxemburg": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Monaco": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Netherlands": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Norway": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Poland": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Portugal": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Romania": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "San Marino": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Slovakia": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Slovenia": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Spain": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Sweden": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "Switzerland": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      },
+      "United Kingdom": {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    }
+  },
   "www.amazon.com": {
     "countrySpecific": {
       "Poland": {
@@ -61,13 +215,7 @@
     "ref": "www.amazon.com"
   },
   "www.apple.com": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
+    "ref": "01-phone-category"
   },
   "aws.amazon.com": {
     "alternatives": [
@@ -629,22 +777,10 @@
     ]
   },
   "www.samsung.com": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
+    "ref": "01-phone-category"
   },
   "store.google.com/category/phones": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
+    "ref": "01-phone-category"
   },
   "store.steampowered.com": {
     "alternatives": [
