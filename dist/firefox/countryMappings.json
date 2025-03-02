@@ -47,15 +47,23 @@
         "url": "bol.com",
         "name": "Bol",
         "origin": "Netherlands"
-      }
-    },
-    "alternatives": [
-      {
+      },
+      "Slovenia": {
+        "url": "mimovrste.com",
+        "name": "Mimovrste",
+        "origin": "Slovenia"
+      },
+      "Switzerland": {
+        "url": "galaxus.ch/en",
+        "name": "Galaxus",
+        "origin": "Switzerland"
+      },
+      "Liechtenstein": {
         "url": "galaxus.ch/en",
         "name": "Galaxus",
         "origin": "Switzerland"
       }
-    ]
+    }
   },
   "www.amazon.de": {
     "ref": "www.amazon.com"

@@ -52,15 +52,18 @@
         "url": "mimovrste.com",
         "name": "Mimovrste",
         "origin": "Slovenia"
-      }
-    },
-    "alternatives": [
-      {
+      },
+      "Switzerland": {
+        "url": "galaxus.ch/en",
+        "name": "Galaxus",
+        "origin": "Switzerland"
+      },
+      "Liechtenstein": {
         "url": "galaxus.ch/en",
         "name": "Galaxus",
         "origin": "Switzerland"
       }
-    ]
+    }
   },
   "www.amazon.de": {
     "ref": "www.amazon.com"
