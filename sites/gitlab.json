@@ -1,0 +1,14 @@
+{
+  "gitlab.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "about.gitlab.com": {
+    "ref": "gitlab.com"
+  }
+}

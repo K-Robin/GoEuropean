@@ -1,31 +1,4 @@
 {
-  "chatgpt.com": {
-    "alternatives": [
-      {
-        "url": "chat.mistral.ai",
-        "name": "Mistral",
-        "origin": "France"
-      }
-    ]
-  },
-  "store.steampowered.com": {
-    "alternatives": [
-      {
-        "url": "gog.com",
-        "name": "GOG",
-        "origin": "Poland"
-      }
-    ]
-  },
-  "translate.google.com": {
-    "alternatives": [
-      {
-        "url": "deepl.com",
-        "name": "DeepL",
-        "origin": "Germany"
-      }
-    ]
-  },
   "www.amazon.com": {
     "countrySpecific": {
       "Poland": {
@@ -80,6 +53,206 @@
   "www.amazon.co.uk": {
     "ref": "www.amazon.com"
   },
+  "www.apple.com": {
+    "alternatives": [
+      {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "aws.amazon.com": {
+    "alternatives": [
+      {
+        "url": "scaleway.com",
+        "name": "Scaleway",
+        "origin": "France"
+      },
+      {
+        "url": "ovhcloud.com",
+        "name": "OVHcloud",
+        "origin": "France"
+      },
+      {
+        "url": "upcloud.com",
+        "name": "UpCloud",
+        "origin": "Finland"
+      },
+      {
+        "url": "exoscale.com",
+        "name": "Exoscale",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "gridscale.io",
+        "name": "gridscale",
+        "origin": "Germany"
+      },
+      {
+        "url": "elastx.se",
+        "name": "Elastx",
+        "origin": "Sweden"
+      },
+      {
+        "url": "cyso.cloud",
+        "name": "Cyso",
+        "origin": "Netherlands"
+      },
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "seeweb.it",
+        "name": "Seeweb",
+        "origin": "Italy"
+      },
+      {
+        "url": "open-telekom-cloud.com",
+        "name": "Open Telekom Cloud",
+        "origin": "Germany"
+      },
+      {
+        "url": "arubacloud.com",
+        "name": "Aruba Cloud",
+        "origin": "Italy"
+      },
+      {
+        "url": "stackit.de",
+        "name": "Stackit",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "azure.microsoft.com": {
+    "alternatives": [
+      {
+        "url": "scaleway.com",
+        "name": "Scaleway",
+        "origin": "France"
+      },
+      {
+        "url": "ovhcloud.com",
+        "name": "OVHcloud",
+        "origin": "France"
+      },
+      {
+        "url": "upcloud.com",
+        "name": "UpCloud",
+        "origin": "Finland"
+      },
+      {
+        "url": "exoscale.com",
+        "name": "Exoscale",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "gridscale.io",
+        "name": "gridscale",
+        "origin": "Germany"
+      },
+      {
+        "url": "elastx.se",
+        "name": "Elastx",
+        "origin": "Sweden"
+      },
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "seeweb.it",
+        "name": "Seeweb",
+        "origin": "Italy"
+      },
+      {
+        "url": "open-telekom-cloud.com",
+        "name": "Open Telekom Cloud",
+        "origin": "Germany"
+      },
+      {
+        "url": "arubacloud.com",
+        "name": "Aruba Cloud",
+        "origin": "Italy"
+      },
+      {
+        "url": "stackit.de",
+        "name": "Stackit",
+        "origin": "Germany"
+      },
+      {
+        "url": "cyso.cloud",
+        "name": "Cyso",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "calendar.google.com": {
+    "alternatives": [
+      {
+        "url": "proton.me/calendar",
+        "name": "Proton Calendar",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "tuta.com/calendar",
+        "name": "Tuta",
+        "origin": "Germany"
+      },
+      {
+        "url": "calendar.online",
+        "name": "Calendar.online",
+        "origin": "Germany"
+      },
+      {
+        "url": "fruux.com",
+        "name": "Fruux",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "chatgpt.com": {
+    "alternatives": [
+      {
+        "url": "chat.mistral.ai",
+        "name": "Mistral",
+        "origin": "France"
+      }
+    ]
+  },
+  "www.dropbox.com": {
+    "alternatives": [
+      {
+        "url": "koofr.eu",
+        "name": "Koofr",
+        "origin": "Slovenia"
+      }
+    ]
+  },
+  "github.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "gitlab.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "about.gitlab.com": {
+    "ref": "gitlab.com"
+  },
   "www.google.com": {
     "alternatives": [
       {
@@ -91,6 +264,411 @@
         "url": "ecosia.org",
         "name": "Ecosia",
         "origin": "Germany"
+      }
+    ]
+  },
+  "www.grammarly.com": {
+    "alternatives": [
+      {
+        "url": "languagetool.org",
+        "name": "LanguageTool",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.instagram.com": {
+    "alternatives": [
+      {
+        "url": "pixelfed.org",
+        "name": "PixelFed",
+        "origin": "Open Source"
+      },
+      {
+        "url": "bereal.com",
+        "name": "BeReal",
+        "origin": "France"
+      }
+    ]
+  },
+  "www.kingston.com": {
+    "alternatives": [
+      {
+        "url": "goodram.com",
+        "name": "GOODRAM",
+        "origin": "Poland"
+      }
+    ]
+  },
+  "www.linkedin.com": {
+    "alternatives": [
+      {
+        "url": "xing.com",
+        "name": "XING",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "music.apple.com": {
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "music.youtube.com": {
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.netlify.com": {
+    "alternatives": [
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "statichost.eu",
+        "name": "StaticHost",
+        "origin": "Sweden"
+      }
+    ]
+  },
+  "www.nike.com": {
+    "countrySpecific": {
+      "Austria": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Belgium": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Bosnia and Herzegovina": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Bulgaria": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Croatia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Cyprus": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Czech Republic": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Denmark": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Estonia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Finland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "France": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Germany": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Greece": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Hungary": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Ireland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Italy": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Latvia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Lithuania": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Luxembourg": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "North Macedonia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Netherlands": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Norway": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Portugal": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Romania": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Serbia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Slovakia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Slovenia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Spain": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Sweden": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Switzerland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "United Kingdom": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      }
+    },
+    "alternatives": [
+      {
+        "url": "adidas.com",
+        "name": "Adidas",
+        "origin": "Germany"
+      },
+      {
+        "url": "puma.com",
+        "name": "Puma",
+        "origin": "Germany"
+      },
+      {
+        "url": "decathlon.com",
+        "name": "Decathlon",
+        "origin": "France"
+      },
+      {
+        "url": "intersport.com",
+        "name": "Intersport",
+        "origin": "Switzerland"
+      }
+    ]
+  },
+  "nordvpn.com": {
+    "alternatives": [
+      {
+        "url": "mullvad.net",
+        "name": "Mullvad",
+        "origin": "Sweden"
+      },
+      {
+        "url": "protonvpn.com",
+        "name": "ProtonVPN",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "f-secure.com",
+        "name": "F-Secure",
+        "origin": "Finland"
+      },
+      {
+        "url": "goosevpn.com",
+        "name": "GOOSE VPN",
+        "origin": "Netherlands"
+      },
+      {
+        "url": "xeovo.com",
+        "name": "Xeovo",
+        "origin": "Finland"
+      },
+      {
+        "url": "octovpn.com",
+        "name": "OctoVPN",
+        "origin": "Norway"
+      },
+      {
+        "url": "airvpn.org",
+        "name": "AirVPN",
+        "origin": "Italy"
+      }
+    ]
+  },
+  "patagonia.com": {
+    "alternatives": [
+      {
+        "url": "vaude.com",
+        "name": "Vaude",
+        "origin": "Germany"
+      },
+      {
+        "url": "fjallraven.com",
+        "name": "Fjällräven",
+        "origin": "Sweden"
+      },
+      {
+        "url": "norrona.com",
+        "name": "Norrona",
+        "origin": "Norway"
+      },
+      {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      {
+        "url": "decathlon.com",
+        "name": "Decathlon",
+        "origin": "France"
+      }
+    ]
+  },
+  "eu.patagonia.com": {
+    "ref": "patagonia.com"
+  },
+  "www.reddit.com": {
+    "alternatives": [
+      {
+        "url": "join-lemmy.org",
+        "name": "Lemmy",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.samsung.com": {
+    "alternatives": [
+      {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "store.steampowered.com": {
+    "alternatives": [
+      {
+        "url": "gog.com",
+        "name": "GOG",
+        "origin": "Poland"
+      }
+    ]
+  },
+  "translate.google.com": {
+    "alternatives": [
+      {
+        "url": "deepl.com",
+        "name": "DeepL",
+        "origin": "Germany"
+      }
+    ]
+  },
+  "www.twilio.com": {
+    "alternatives": [
+      {
+        "url": "seven.io",
+        "name": "Seven",
+        "origin": "Germany"
+      },
+      {
+        "url": "gatewayapi.com",
+        "name": "GatewayAPI",
+        "origin": "Denmark"
+      },
+      {
+        "url": "sms.to",
+        "name": "SMS.to",
+        "origin": "Cyprus"
+      },
+      {
+        "url": "smsgatewayapi.eu",
+        "name": "smstools",
+        "origin": "Belgium"
       }
     ]
   },
@@ -253,458 +831,12 @@
       }
     }
   },
-  "www.reddit.com": {
-    "alternatives": [
-      {
-        "url": "join-lemmy.org",
-        "name": "Lemmy",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "www.nike.com": {
-    "alternatives": [
-      {
-        "url": "adidas.com",
-        "name": "Adidas",
-        "origin": "Germany"
-      },
-      {
-        "url": "puma.com",
-        "name": "Puma",
-        "origin": "Germany"
-      },
-      {
-        "url": "4fstore.com",
-        "name": "4F",
-        "origin": "Poland"
-      },
-      {
-        "url": "decathlon.com",
-        "name": "Decathlon",
-        "origin": "France"
-      },
-      {
-        "url": "intersport.com",
-        "name": "Intersport",
-        "origin": "Switzerland"
-      }
-    ]
-  },
-  "music.youtube.com": {
-    "alternatives": [
-      {
-        "url": "open.spotify.com",
-        "name": "Spotify",
-        "origin": "Sweden"
-      },
-      {
-        "url": "deezer.com",
-        "name": "Deezer",
-        "origin": "France"
-      },
-      {
-        "url": "soundcloud.com",
-        "name": "SoundCloud",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "music.apple.com": {
-    "alternatives": [
-      {
-        "url": "open.spotify.com",
-        "name": "Spotify",
-        "origin": "Sweden"
-      },
-      {
-        "url": "deezer.com",
-        "name": "Deezer",
-        "origin": "France"
-      },
-      {
-        "url": "soundcloud.com",
-        "name": "SoundCloud",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "www.instagram.com": {
-    "alternatives": [
-      {
-        "url": "pixelfed.org",
-        "name": "PixelFed",
-        "origin": "Open Source"
-      },
-      {
-        "url": "bereal.com",
-        "name": "BeReal",
-        "origin": "France"
-      }
-    ]
-  },
-  "www.netlify.com": {
-    "alternatives": [
-      {
-        "url": "ionos.com",
-        "name": "IONOS",
-        "origin": "Germany"
-      },
-      {
-        "url": "statichost.eu",
-        "name": "StaticHost",
-        "origin": "Sweden"
-      }
-    ]
-  },
-  "vercel.com": {
-    "alternatives": [
-      {
-        "url": "ionos.com",
-        "name": "IONOS",
-        "origin": "Germany"
-      },
-      {
-        "url": "statichost.eu",
-        "name": "StaticHost",
-        "origin": "Sweden"
-      }
-    ]
-  },
   "x.com": {
     "alternatives": [
       {
         "url": "joinmastodon.org",
         "name": "Mastodon",
         "origin": "Open Source"
-      }
-    ]
-  },
-  "www.grammarly.com": {
-    "alternatives": [
-      {
-        "url": "languagetool.org",
-        "name": "LanguageTool",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "github.com": {
-    "alternatives": [
-      {
-        "url": "codeberg.org",
-        "name": "Codeberg",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "about.gitlab.com": {
-    "alternatives": [
-      {
-        "url": "codeberg.org",
-        "name": "Codeberg",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "gitlab.com": {
-    "alternatives": [
-      {
-        "url": "codeberg.org",
-        "name": "Codeberg",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "www.twilio.com": {
-    "alternatives": [
-      {
-        "url": "seven.io",
-        "name": "Seven",
-        "origin": "Germany"
-      },
-      {
-        "url": "gatewayapi.com",
-        "name": "GatewayAPI",
-        "origin": "Denmark"
-      },
-      {
-        "url": "sms.to",
-        "name": "SMS.to",
-        "origin": "Cyprus"
-      },
-      {
-        "url": "smsgatewayapi.eu",
-        "name": "smstools",
-        "origin": "Belgium"
-      }
-    ]
-  },
-  "www.apple.com": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
-  },
-  "www.samsung.com": {
-    "alternatives": [
-      {
-        "url": "fairphone.com",
-        "name": "Fairphone",
-        "origin": "Netherlands"
-      }
-    ]
-  },
-  "www.dropbox.com": {
-    "alternatives": [
-      {
-        "url": "koofr.eu",
-        "name": "Koofr",
-        "origin": "Slovenia"
-      }
-    ]
-  },
-  "www.kingston.com": {
-    "alternatives": [
-      {
-        "url": "goodram.com",
-        "name": "GOODRAM",
-        "origin": "Poland"
-      }
-    ]
-  },
-  "aws.amazon.com": {
-    "alternatives": [
-      {
-        "url": "scaleway.com",
-        "name": "Scaleway",
-        "origin": "France"
-      },
-      {
-        "url": "ovhcloud.com",
-        "name": "OVHcloud",
-        "origin": "France"
-      },
-      {
-        "url": "upcloud.com",
-        "name": "UpCloud",
-        "origin": "Finland"
-      },
-      {
-        "url": "exoscale.com",
-        "name": "Exoscale",
-        "origin": "Switzerland"
-      },
-      {
-        "url": "gridscale.io",
-        "name": "gridscale",
-        "origin": "Germany"
-      },
-      {
-        "url": "elastx.se",
-        "name": "Elastx",
-        "origin": "Sweden"
-      },
-      {
-        "url": "cyso.cloud",
-        "name": "Cyso",
-        "origin": "Netherlands"
-      },
-      {
-        "url": "ionos.com",
-        "name": "IONOS",
-        "origin": "Germany"
-      },
-      {
-        "url": "seeweb.it",
-        "name": "Seeweb",
-        "origin": "Italy"
-      },
-      {
-        "url": "open-telekom-cloud.com",
-        "name": "Open Telekom Cloud",
-        "origin": "Germany"
-      },
-      {
-        "url": "arubacloud.com",
-        "name": "Aruba Cloud",
-        "origin": "Italy"
-      },
-      {
-        "url": "stackit.de",
-        "name": "Stackit",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "nordvpn.com": {
-    "alternatives": [
-      {
-        "url": "mullvad.net",
-        "name": "Mullvad",
-        "origin": "Sweden"
-      },
-      {
-        "url": "protonvpn.com",
-        "name": "ProtonVPN",
-        "origin": "Switzerland"
-      },
-      {
-        "url": "f-secure.com",
-        "name": "F-Secure",
-        "origin": "Finland"
-      },
-      {
-        "url": "goosevpn.com",
-        "name": "GOOSE VPN",
-        "origin": "Netherlands"
-      },
-      {
-        "url": "xeovo.com",
-        "name": "Xeovo",
-        "origin": "Finland"
-      },
-      {
-        "url": "octovpn.com",
-        "name": "OctoVPN",
-        "origin": "Norway"
-      },
-      {
-        "url": "airvpn.org",
-        "name": "AirVPN",
-        "origin": "Italy"
-      }
-    ]
-  },
-  "azure.microsoft.com": {
-    "alternatives": [
-      {
-        "url": "scaleway.com",
-        "name": "Scaleway",
-        "origin": "France"
-      },
-      {
-        "url": "ovhcloud.com",
-        "name": "OVHcloud",
-        "origin": "France"
-      },
-      {
-        "url": "upcloud.com",
-        "name": "UpCloud",
-        "origin": "Finland"
-      },
-      {
-        "url": "exoscale.com",
-        "name": "Exoscale",
-        "origin": "Switzerland"
-      },
-      {
-        "url": "gridscale.io",
-        "name": "gridscale",
-        "origin": "Germany"
-      },
-      {
-        "url": "elastx.se",
-        "name": "Elastx",
-        "origin": "Sweden"
-      },
-      {
-        "url": "ionos.com",
-        "name": "IONOS",
-        "origin": "Germany"
-      },
-      {
-        "url": "seeweb.it",
-        "name": "Seeweb",
-        "origin": "Italy"
-      },
-      {
-        "url": "open-telekom-cloud.com",
-        "name": "Open Telekom Cloud",
-        "origin": "Germany"
-      },
-      {
-        "url": "arubacloud.com",
-        "name": "Aruba Cloud",
-        "origin": "Italy"
-      },
-      {
-        "url": "stackit.de",
-        "name": "Stackit",
-        "origin": "Germany"
-      },
-      {
-        "url": "cyso.cloud",
-        "name": "Cyso",
-        "origin": "Netherlands"
-      }
-    ]
-  },
-  "patagonia.com": {
-    "alternatives": [
-      {
-        "url": "vaude.com",
-        "name": "Vaude",
-        "origin": "Germany"
-      },
-      {
-        "url": "fjallraven.com",
-        "name": "Fjällräven",
-        "origin": "Sweden"
-      },
-      {
-        "url": "norrona.com",
-        "name": "Norrona",
-        "origin": "Norway"
-      },
-      {
-        "url": "4fstore.com",
-        "name": "4F",
-        "origin": "Poland"
-      },
-      {
-        "url": "decathlon.com",
-        "name": "Decathlon",
-        "origin": "France"
-      }
-    ]
-  },
-  "eu.patagonia.com": {
-    "ref": "patagonia.com"
-  },
-  "www.linkedin.com": {
-    "alternatives": [
-      {
-        "url": "xing.com",
-        "name": "XING",
-        "origin": "Germany"
-      }
-    ]
-  },
-  "calendar.google.com": {
-    "alternatives": [
-      {
-        "url": "proton.me/calendar",
-        "name": "Proton Calendar",
-        "origin": "Switzerland"
-      },
-      {
-        "url": "tuta.com/calendar",
-        "name": "Tuta",
-        "origin": "Germany"
-      },
-      {
-        "url": "calendar.online",
-        "name": "Calendar.online",
-        "origin": "Germany"
-      },
-      {
-        "url": "fruux.com",
-        "name": "Fruux",
-        "origin": "Germany"
       }
     ]
   }

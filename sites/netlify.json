@@ -1,0 +1,16 @@
+{
+  "www.netlify.com": {
+    "alternatives": [
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "statichost.eu",
+        "name": "StaticHost",
+        "origin": "Sweden"
+      }
+    ]
+  }
+}

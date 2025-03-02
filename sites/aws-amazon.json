@@ -1,0 +1,66 @@
+{
+  "aws.amazon.com": {
+    "alternatives": [
+      {
+        "url": "scaleway.com",
+        "name": "Scaleway",
+        "origin": "France"
+      },
+      {
+        "url": "ovhcloud.com",
+        "name": "OVHcloud",
+        "origin": "France"
+      },
+      {
+        "url": "upcloud.com",
+        "name": "UpCloud",
+        "origin": "Finland"
+      },
+      {
+        "url": "exoscale.com",
+        "name": "Exoscale",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "gridscale.io",
+        "name": "gridscale",
+        "origin": "Germany"
+      },
+      {
+        "url": "elastx.se",
+        "name": "Elastx",
+        "origin": "Sweden"
+      },
+      {
+        "url": "cyso.cloud",
+        "name": "Cyso",
+        "origin": "Netherlands"
+      },
+      {
+        "url": "ionos.com",
+        "name": "IONOS",
+        "origin": "Germany"
+      },
+      {
+        "url": "seeweb.it",
+        "name": "Seeweb",
+        "origin": "Italy"
+      },
+      {
+        "url": "open-telekom-cloud.com",
+        "name": "Open Telekom Cloud",
+        "origin": "Germany"
+      },
+      {
+        "url": "arubacloud.com",
+        "name": "Aruba Cloud",
+        "origin": "Italy"
+      },
+      {
+        "url": "stackit.de",
+        "name": "Stackit",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

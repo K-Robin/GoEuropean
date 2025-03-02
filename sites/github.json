@@ -1,0 +1,11 @@
+{
+  "github.com": {
+    "alternatives": [
+      {
+        "url": "codeberg.org",
+        "name": "Codeberg",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

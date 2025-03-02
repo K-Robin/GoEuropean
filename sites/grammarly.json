@@ -1,0 +1,11 @@
+{
+  "www.grammarly.com": {
+    "alternatives": [
+      {
+        "url": "languagetool.org",
+        "name": "LanguageTool",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

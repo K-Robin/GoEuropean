@@ -1,0 +1,183 @@
+{
+  "www.nike.com": {
+    "countrySpecific": {
+      "Austria": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Belgium": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Bosnia and Herzegovina": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Bulgaria": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Croatia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Cyprus": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Czech Republic": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Denmark": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Estonia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Finland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "France": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Germany": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Greece": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Hungary": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Ireland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Italy": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Latvia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Lithuania": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Luxembourg": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "North Macedonia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Netherlands": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Norway": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Portugal": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Romania": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Serbia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Slovakia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Slovenia": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Spain": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Sweden": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "Switzerland": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      },
+      "United Kingdom": {
+        "url": "4fstore.com",
+        "name": "4F",
+        "origin": "Poland"
+      }
+    },
+    "alternatives": [
+      {
+        "url": "adidas.com",
+        "name": "Adidas",
+        "origin": "Germany"
+      },
+      {
+        "url": "puma.com",
+        "name": "Puma",
+        "origin": "Germany"
+      },
+      {
+        "url": "decathlon.com",
+        "name": "Decathlon",
+        "origin": "France"
+      },
+      {
+        "url": "intersport.com",
+        "name": "Intersport",
+        "origin": "Switzerland"
+      }
+    ]
+  }
+}

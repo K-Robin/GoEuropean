@@ -1,0 +1,41 @@
+{
+  "nordvpn.com": {
+    "alternatives": [
+      {
+        "url": "mullvad.net",
+        "name": "Mullvad",
+        "origin": "Sweden"
+      },
+      {
+        "url": "protonvpn.com",
+        "name": "ProtonVPN",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "f-secure.com",
+        "name": "F-Secure",
+        "origin": "Finland"
+      },
+      {
+        "url": "goosevpn.com",
+        "name": "GOOSE VPN",
+        "origin": "Netherlands"
+      },
+      {
+        "url": "xeovo.com",
+        "name": "Xeovo",
+        "origin": "Finland"
+      },
+      {
+        "url": "octovpn.com",
+        "name": "OctoVPN",
+        "origin": "Norway"
+      },
+      {
+        "url": "airvpn.org",
+        "name": "AirVPN",
+        "origin": "Italy"
+      }
+    ]
+  }
+}

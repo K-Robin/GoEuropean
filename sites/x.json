@@ -1,0 +1,11 @@
+{
+  "x.com": {
+    "alternatives": [
+      {
+        "url": "joinmastodon.org",
+        "name": "Mastodon",
+        "origin": "Open Source"
+      }
+    ]
+  }
+}

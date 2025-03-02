@@ -1,0 +1,16 @@
+{
+  "www.google.com": {
+    "alternatives": [
+      {
+        "url": "qwant.com",
+        "name": "Qwant",
+        "origin": "France"
+      },
+      {
+        "url": "ecosia.org",
+        "name": "Ecosia",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

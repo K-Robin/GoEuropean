@@ -1,0 +1,11 @@
+{
+  "chatgpt.com": {
+    "alternatives": [
+      {
+        "url": "chat.mistral.ai",
+        "name": "Mistral",
+        "origin": "France"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "www.reddit.com": {
+    "alternatives": [
+      {
+        "url": "join-lemmy.org",
+        "name": "Lemmy",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

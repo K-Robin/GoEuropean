@@ -1,0 +1,26 @@
+{
+  "www.twilio.com": {
+    "alternatives": [
+      {
+        "url": "seven.io",
+        "name": "Seven",
+        "origin": "Germany"
+      },
+      {
+        "url": "gatewayapi.com",
+        "name": "GatewayAPI",
+        "origin": "Denmark"
+      },
+      {
+        "url": "sms.to",
+        "name": "SMS.to",
+        "origin": "Cyprus"
+      },
+      {
+        "url": "smsgatewayapi.eu",
+        "name": "smstools",
+        "origin": "Belgium"
+      }
+    ]
+  }
+}

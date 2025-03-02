@@ -1,0 +1,16 @@
+{
+  "www.instagram.com": {
+    "alternatives": [
+      {
+        "url": "pixelfed.org",
+        "name": "PixelFed",
+        "origin": "Open Source"
+      },
+      {
+        "url": "bereal.com",
+        "name": "BeReal",
+        "origin": "France"
+      }
+    ]
+  }
+}

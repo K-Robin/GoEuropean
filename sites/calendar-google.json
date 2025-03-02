@@ -1,0 +1,26 @@
+{
+  "calendar.google.com": {
+    "alternatives": [
+      {
+        "url": "proton.me/calendar",
+        "name": "Proton Calendar",
+        "origin": "Switzerland"
+      },
+      {
+        "url": "tuta.com/calendar",
+        "name": "Tuta",
+        "origin": "Germany"
+      },
+      {
+        "url": "calendar.online",
+        "name": "Calendar.online",
+        "origin": "Germany"
+      },
+      {
+        "url": "fruux.com",
+        "name": "Fruux",
+        "origin": "Germany"
+      }
+    ]
+  }
+}

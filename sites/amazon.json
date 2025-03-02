@@ -1,0 +1,56 @@
+{
+  "www.amazon.com": {
+    "countrySpecific": {
+      "Poland": {
+        "url": "allegro.pl",
+        "name": "Allegro",
+        "origin": "Poland"
+      },
+      "Germany": {
+        "url": "otto.de",
+        "name": "Otto",
+        "origin": "Germany"
+      },
+      "France": {
+        "url": "fnac.com",
+        "name": "Fnac",
+        "origin": "France"
+      },
+      "Netherlands": {
+        "url": "bol.com",
+        "name": "Bol",
+        "origin": "Netherlands"
+      },
+      "Slovenia": {
+        "url": "mimovrste.com",
+        "name": "Mimovrste",
+        "origin": "Slovenia"
+      },
+      "Switzerland": {
+        "url": "galaxus.ch/en",
+        "name": "Galaxus",
+        "origin": "Switzerland"
+      },
+      "Liechtenstein": {
+        "url": "galaxus.ch/en",
+        "name": "Galaxus",
+        "origin": "Switzerland"
+      }
+    }
+  },
+  "www.amazon.de": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.it": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.fr": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.nl": {
+    "ref": "www.amazon.com"
+  },
+  "www.amazon.co.uk": {
+    "ref": "www.amazon.com"
+  }
+}
