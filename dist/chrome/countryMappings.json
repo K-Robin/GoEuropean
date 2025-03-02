@@ -153,6 +153,25 @@
       }
     }
   },
+  "02-music-category": {
+    "alternatives": [
+      {
+        "url": "open.spotify.com",
+        "name": "Spotify",
+        "origin": "Sweden"
+      },
+      {
+        "url": "deezer.com",
+        "name": "Deezer",
+        "origin": "France"
+      },
+      {
+        "url": "soundcloud.com",
+        "name": "SoundCloud",
+        "origin": "Germany"
+      }
+    ]
+  },
   "www.amazon.com": {
     "countrySpecific": {
       "Poland": {
@@ -464,42 +483,10 @@
     ]
   },
   "music.apple.com": {
-    "alternatives": [
-      {
-        "url": "open.spotify.com",
-        "name": "Spotify",
-        "origin": "Sweden"
-      },
-      {
-        "url": "deezer.com",
-        "name": "Deezer",
-        "origin": "France"
-      },
-      {
-        "url": "soundcloud.com",
-        "name": "SoundCloud",
-        "origin": "Germany"
-      }
-    ]
+    "ref": "02-music-category"
   },
   "music.youtube.com": {
-    "alternatives": [
-      {
-        "url": "open.spotify.com",
-        "name": "Spotify",
-        "origin": "Sweden"
-      },
-      {
-        "url": "deezer.com",
-        "name": "Deezer",
-        "origin": "France"
-      },
-      {
-        "url": "soundcloud.com",
-        "name": "SoundCloud",
-        "origin": "Germany"
-      }
-    ]
+    "ref": "02-music-category"
   },
   "www.netlify.com": {
     "alternatives": [
