@@ -11,11 +11,18 @@
         "name": "Otto",
         "origin": "Germany"
       },
-      "France": {
-        "url": "fnac.com",
-        "name": "Fnac",
-        "origin": "France"
-      },
+      "France": [
+        {
+          "url": "fnac.com",
+          "name": "Fnac",
+          "origin": "France"
+        },
+        {
+          "url": "cdiscount.com",
+          "name": "Cdiscount",
+          "origin": "France"
+        }
+      ],
       "Netherlands": {
         "url": "bol.com",
         "name": "Bol",
@@ -622,6 +629,15 @@
     ]
   },
   "www.samsung.com": {
+    "alternatives": [
+      {
+        "url": "fairphone.com",
+        "name": "Fairphone",
+        "origin": "Netherlands"
+      }
+    ]
+  },
+  "store.google.com/category/phones": {
     "alternatives": [
       {
         "url": "fairphone.com",

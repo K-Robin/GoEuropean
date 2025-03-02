@@ -11,11 +11,18 @@
         "name": "Otto",
         "origin": "Germany"
       },
-      "France": {
-        "url": "fnac.com",
-        "name": "Fnac",
-        "origin": "France"
-      },
+      "France": [
+        {
+          "url": "fnac.com",
+          "name": "Fnac",
+          "origin": "France"
+        },
+        {
+          "url": "cdiscount.com",
+          "name": "Cdiscount",
+          "origin": "France"
+        }
+      ],
       "Netherlands": {
         "url": "bol.com",
         "name": "Bol",
