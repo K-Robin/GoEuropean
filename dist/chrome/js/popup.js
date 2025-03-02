@@ -5,10 +5,10 @@ let availableCountries = [];
 let currentHostname = '';
 let whitelistedSites = [];
 const europeanCountries = [
-    "Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus",
+    "Albania", "Andorra", "Austria", "Belarus",
     "Belgium", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Cyprus",
-    "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Georgia",
-    "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Kazakhstan",
+    "Czech Republic", "Denmark", "Estonia", "Finland", "France",
+    "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy",
     "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta",
     "Moldova", "Monaco", "Montenegro", "Netherlands", "North Macedonia",
     "Norway", "Poland", "Portugal", "Romania", "Russia", "San Marino", "Serbia",
