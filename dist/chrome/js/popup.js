@@ -4,6 +4,18 @@ let countryMappings = {};
 let availableCountries = [];
 let currentHostname = '';
 let whitelistedSites = [];
+const europeanCountries = [
+    "Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus",
+    "Belgium", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Cyprus",
+    "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Georgia",
+    "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Kazakhstan",
+    "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta",
+    "Moldova", "Monaco", "Montenegro", "Netherlands", "North Macedonia",
+    "Norway", "Poland", "Portugal", "Romania", "Russia", "San Marino", "Serbia",
+    "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Turkey", "Ukraine",
+    "United Kingdom", "Vatican City"
+];
+
 
 // Function to resolve domain reference and get actual site data
 function resolveSiteData(hostname) {
@@ -138,7 +150,7 @@ function setupUI() {
 
     countryInput.addEventListener("input", function () {
         const input = this.value.toLowerCase();
-        const filteredCountries = availableCountries.filter(country =>
+        const filteredCountries = europeanCountries.filter(country =>
             country.toLowerCase().includes(input)
         );
         showAutoComplete(filteredCountries);
@@ -146,7 +158,7 @@ function setupUI() {
 
     countryInput.addEventListener("focus", function() {
         // Show all countries when the input is focused
-        showAutoComplete(availableCountries);
+        showAutoComplete(europeanCountries);
     });
 
     // Close autocomplete when clicking outside

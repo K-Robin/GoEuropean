@@ -95,13 +95,163 @@
     ]
   },
   "www.uber.com": {
-    "alternatives": [
-      {
+    "countrySpecific": {
+      "Austria": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Belgium": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Bulgaria": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Croatia": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Cyprus": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Czech Republic": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Denmark": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Estonia": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Finland": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "France": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Germany": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Greece": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Hungary": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Ireland": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Italy": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Latvia": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Lithuania": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Malta": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Moldova": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Netherlands": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Norway": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Poland": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Portugal": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Romania": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Slovakia": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Slovenia": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Spain": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Sweden": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Switzerland": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "Ukraine": {
+        "url": "bolt.eu",
+        "name": "Bolt",
+        "origin": "Estonia"
+      },
+      "United Kingdom": {
         "url": "bolt.eu",
         "name": "Bolt",
         "origin": "Estonia"
       }
-    ]
+    }
   },
   "www.reddit.com": {
     "alternatives": [
