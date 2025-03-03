@@ -1,3 +1,7 @@
+# GO EUROPEAN HAS MOVED TO CODEBERG
+# https://codeberg.org/K-Robin/GoEuropean
+# :)
+
 # Go European
 
 ## Description
