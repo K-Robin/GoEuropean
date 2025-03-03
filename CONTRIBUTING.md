@@ -21,7 +21,7 @@ If the prefix is www, remove it otherwise replace the dot with a hyphen.
 
 4. Add the alternative website information to the JSON file. You can checkout the [nike alternatives](sites/nike.json) for an example on both 
 country specific and non-country specific alternatives. In the sites folder we also have a few categories.
-Websites like Apple Music and Youtube Music have the same alternatives so we can just reference the category, like in [Apple Music](sites/apple-music.json).
+Websites like Apple Music and Youtube Music have the same alternatives so we can just reference the category, like in [Apple Music](sites/music-apple.json).
 5. Run the buildMapping.js script to update the countryMapping.json file.
 6. Run the buildVersions.js script to update the versions for both Firefox and Chrome (this will be changed
 once FireFox supports Manifest V3).
