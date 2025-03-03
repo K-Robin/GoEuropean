@@ -29,4 +29,4 @@ once FireFox supports Manifest V3).
 - Why the alternative is a good alternative
 - Proof that the website is based in Europe (can be something as simple as info on the website).
 
-It will take time to verify and merge these as I need to run a script over them for compatability with Chrome and Firefox.
+It will take time to verify and merge these.
